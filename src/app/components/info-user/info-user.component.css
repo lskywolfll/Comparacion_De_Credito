@@ -1,0 +1,36 @@
+.overflow{
+    overflow-x: hidden;
+}
+/* NavBar */
+.navbar{
+    background-color: #539cd3;
+    border-bottom: 1px solid black;
+}
+#logo{
+    border: none;
+}
+a {
+    color: aliceblue;
+}
+.btn{
+    border-color: white;
+}
+
+/* Body */
+
+
+
+/* footer */
+.footer{
+    float: initial;
+    background-color: black;
+}
+.footer_top{
+    border-top: 1px solid black;
+}
+#footer-1{
+    color: white;
+}
+#footer-container{
+    color: white
+}
