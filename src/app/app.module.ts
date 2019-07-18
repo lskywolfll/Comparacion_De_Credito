@@ -21,6 +21,7 @@ import { EstadisticasDeUsoComponent } from './components/estadisticas-de-uso/est
 import { EditAdministradorComponent } from './components/edit-administrador/edit-administrador.component';
 import { CreateBankComponent } from './components/create-bank/create-bank.component';
 import { AdministracionComponent } from './components/administracion/administracion.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { AdministracionComponent } from './components/administracion/administrac
     EstadisticasDeUsoComponent,
     EditAdministradorComponent,
     CreateBankComponent,
-    AdministracionComponent
+    AdministracionComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
