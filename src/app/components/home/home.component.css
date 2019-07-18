@@ -1,0 +1,172 @@
+.overflow{
+    overflow-x: hidden;
+}
+/* NavBar */
+.navbar{
+    background-color: #539cd3;
+    border-bottom: 1px solid black;
+}
+#logo{
+    border: none;
+}
+a {
+    color: aliceblue;
+}
+
+
+
+/* ----------------------------------------------------------------------------- */
+/* Sobre Nosotros */
+.cuerpo{
+    background: rgb(1,36,56);
+    background: -moz-linear-gradient(0deg, rgba(1,36,56,1) 0%, rgba(9,62,92,1) 25%, rgba(105,164,172,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(1,36,56,1) 0%, rgba(9,62,92,1) 25%, rgba(105,164,172,1) 100%);
+    background: linear-gradient(0deg, rgba(1,36,56,1) 0%, rgba(9,62,92,1) 25%, rgba(105,164,172,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#012438",endColorstr="#69a4ac",GradientType=1);
+}
+
+/* ----------------------------------------------------------------------------- */
+/* Seba */
+.cuadro1{
+    margin-top: 1rem;
+    margin-right: 10rem;
+    width: 200px;
+    height: 300px;
+    color: blanchedalmond;
+}
+#seba{
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+.rect1{
+    border: 1px solid black;
+}
+
+/* ----------------------------------------------------------------------------- */
+/* Sandy */
+#sandy{
+    border-radius: 100%;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+}
+.cuadro2{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    margin-right: 10rem;
+    width: 200px;
+    height: 300px;
+    color: blanchedalmond;
+}
+.rect2{
+    border: 1px solid black;
+}
+/* ----------------------------------------------------------------------------- */
+/* Rene */
+#rene{ 
+    border-radius: 100%;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+}
+.cuadro3{
+    margin-top: 4rem;
+    width: 200px;
+    height: 300px;
+    color: blanchedalmond;
+}
+.rect3{
+    border: 1px solid black;
+}
+
+/* ----------------------------------------------------------------------------- */
+/* Cony */
+#cony{
+    border-radius: 100%;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+}
+.cuadro4{
+    margin-right: 10rem;
+    width: 200px;
+    height: 300px;
+    color: blanchedalmond;
+}
+.rect4{
+    border: 1px solid black;
+}
+
+/* ----------------------------------------------------------------------------- */
+/* Rhada */
+#rhada{
+    border-radius: 100%;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+}
+.cuadro5{
+    margin-right: 10rem;
+    margin-bottom: 3rem;
+    width: 200px;
+    height: 300px;
+    color: blanchedalmond;
+}
+.rect5{
+    border: 1px solid black;
+}
+
+/* ----------------------------------------------------------------------------- */
+/* Evelyn */
+#evelyn{
+    border-radius: 100%;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+}
+.cuadro6{
+    width: 200px;
+    height: 300px;
+    color: blanchedalmond;
+}
+.rect6{
+    border: 1px solid black;
+}
+
+/* ----------------------------------------------------------------------------- */
+/* Jorge */
+#jorge{
+    border-radius: 100%;
+    border: 1px solid orange;
+    width: 200px;
+    height: 200px;
+}
+.cuadro7{
+    margin-bottom: 2rem;
+    width: 200px;
+    height: 300px;
+    color: blanchedalmond;
+}
+.rect7{
+    border: 1px solid orange;
+}
+/* ----------------------------------------------------------------------------- */
+
+
+
+/* footer */
+.footer{
+    float: initial;
+    background-color: black;
+}
+.footer_top{
+    border-top: 1px solid black;
+}
+#footer-1{
+    color: white;
+}
+#footer-container{
+    color: white
+}

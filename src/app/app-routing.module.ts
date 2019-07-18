@@ -6,6 +6,7 @@ import { AdministracionComponent } from './components/administracion/administrac
 import { InfoUserComponent } from './components/info-user/info-user.component';
 import { CreateBankComponent } from './components/create-bank/create-bank.component';
 import { RegistrarseComponent } from './components/registrarse/registrarse.component';
+import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
   {path: "", component:AppComponent},
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path: "login/Administracion", component:AdministracionComponent},
   {path: "user/informaciones", component:InfoUserComponent},
   {path: "createCredit", component:CreateBankComponent},
-  {path: "register", component:RegistrarseComponent}
+  {path: "register", component:RegistrarseComponent},
+  {path: "home", component:HomeComponent}
 ];  
 
 @NgModule({
