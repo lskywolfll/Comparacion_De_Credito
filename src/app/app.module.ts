@@ -22,6 +22,7 @@ import { EditAdministradorComponent } from './components/edit-administrador/edit
 import { CreateBankComponent } from './components/create-bank/create-bank.component';
 import { AdministracionComponent } from './components/administracion/administracion.component';
 import { HomeComponent } from './components/home/home.component';
+import { HomeUserComponent } from './components/home-user/home-user.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { HomeComponent } from './components/home/home.component';
     EditAdministradorComponent,
     CreateBankComponent,
     AdministracionComponent,
-    HomeComponent
+    HomeComponent,
+    HomeUserComponent
   ],
   imports: [
     BrowserModule,
