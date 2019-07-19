@@ -40,7 +40,7 @@ a {
     height: 190px;
     border: 1px solid black;
     background-color: aliceblue;
-    margin-top: 7rem;
+    margin-top: 4rem;
 }
 #nav-container{
     background-color: #048dbe;
@@ -49,17 +49,20 @@ a {
 }
 /* --------- */
 
+#separar{
+    height: 3rem;
+}
 
 /* Info */
 #info-container{
-    height: 50rem;
+    height: 40rem;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 3rem;
 }
 #container-info{
-    border: 1px solid black;
+    border: 1px solid black;    
     background-color: #91a8b5;
+    margin-top: 5rem;
 }
 #img-info{
     margin-top: 1.5rem;
