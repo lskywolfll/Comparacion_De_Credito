@@ -76,16 +76,16 @@ a {
 }
 /* --------- */
 .info-sueldo{
-    margin-left: 5rem;
-    margin-top: 0.5rem;
+    margin-left: 4rem;
+    margin-top: 1rem;
 }
 .info-id{
-    margin-top: 0.5rem;
-    margin-left: 8rem;
+    margin-top: 1rem;
+    margin-left: 4rem;
 }
 #boton-info1{
     margin-top: 2rem;
-    margin-left: 16rem;
+    margin-left: 12rem;
     margin-bottom: 2rem;
 }
 #boton-info2{
