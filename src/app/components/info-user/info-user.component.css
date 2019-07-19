@@ -17,6 +17,82 @@ a {
 }
 
 /* Body */
+.form-group {
+    margin-bottom: 0rem;
+}
+/* Fondo */
+#medio{
+    background: rgb(1,36,56);
+    background: -moz-linear-gradient(0deg, rgba(1,36,56,1) 0%, rgba(9,62,92,1) 25%, rgba(105,164,172,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(1,36,56,1) 0%, rgba(9,62,92,1) 25%, rgba(105,164,172,1) 100%);
+    background: linear-gradient(0deg, rgba(1,36,56,1) 0%, rgba(9,62,92,1) 25%, rgba(105,164,172,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#012438",endColorstr="#69a4ac",GradientType=1);
+}
+
+/* Container Dinero */
+#money{
+    height: 20rem;
+    border: 1px solid transparent;
+    margin-left: auto;
+    margin-right: auto;
+}
+#dinero{
+    height: 190px;
+    border: 1px solid black;
+    background-color: aliceblue;
+    margin-top: 7rem;
+}
+#nav-container{
+    background-color: #048dbe;
+    height: 2.5rem;    
+    color: white;
+}
+/* --------- */
+
+
+/* Info */
+#info-container{
+    height: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+}
+#container-info{
+    border: 1px solid black;
+    background-color: #91a8b5;
+}
+#img-info{
+    margin-top: 1.5rem;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+    width:150px;
+    border-radius: 20%;
+}
+#info-cont{
+    padding-top: 3rem;
+}
+.bloque2{
+    background: #748fa1;
+}
+/* --------- */
+.info-sueldo{
+    margin-left: 5rem;
+    margin-top: 0.5rem;
+}
+.info-id{
+    margin-top: 0.5rem;
+    margin-left: 8rem;
+}
+#boton-info1{
+    margin-top: 2rem;
+    margin-left: 16rem;
+    margin-bottom: 2rem;
+}
+#boton-info2{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
 
 
 
