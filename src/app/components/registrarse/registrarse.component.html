@@ -32,7 +32,7 @@
                     <h1>Regístrate</h1>
                     ¿Ya tienes una cuenta?
                     <a href="login">Iniciar Sesión</a>
-                    <hr>
+                    <hr style="border-top-color: #007bff">
                 </div> 
                 
                 <!-- formulario -->
@@ -40,25 +40,26 @@
                     <!-- Nombre - Apellido -->
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="Nombre">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" placeholder="Ej: René">                                    
+                            <label>Nombre</label>
+                            <input type="text" ([ngModel])="nombre" class="form-control" id="nombre" placeholder="Ej: René" required>                              
                         </div>                          
                         <div class="form-group col-md-6">
-                            <label for="inputLastName">Apellido</label>
-                            <input type="text" class="form-control" id="apellido" placeholder="Ej: Sanchéz">
+                            <label>Apellido</label>
+                            <input type="text" ([ngModel])="apellido" class="form-control" id="apellido" placeholder="Ej: Sanchéz" required>
                         </div>
                     </div>
 
                     <!-- Rut -->
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="inputRut">Rut</label>
-                            <input type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');" class="form-control" id="rut" placeholder="12345678" minlength="7" maxlength="8">
+                            <label>Rut</label>
+                            <input type="text" ([ngModel])="rut" oninput="this.value=this.value.replace(/[^0-9]/g,'');" class="form-control" id="rut" placeholder="12345678" minlength="3" maxlength="8" required>
                         </div>                              
                     <div class="form-group col-md-2">
-                        <label for="inputDigito">Dígito</label>
-                        <select id="inputDigit" class="form-control">
-                            <option selected>K</option>
+                        <label>Dígito</label>
+                        <select id="inputDigit" ([ngModel])="digito" class="form-control" required>
+                            <option disabled selected></option>
+                            <option>K</option>
                             <option>0</option>
                             <option>1</option>
                             <option>2</option>
@@ -72,210 +73,82 @@
                         </select>
                     </div>
                 </div>
-                <hr>
+                <hr style="border-top-color: aquamarine">
 
                 <!-- Fecha Nacimiento -->
                 <div class="form-row">
-                    <label for="inputFecha">Fecha de Nacimiento</label>
-                
-                    <!-- Día -->
-                    <div class="form-group col-xs-2">                              
-                        <select id="inputDia" class="form-control">   
-                            <option disabled selected>Día</option>                     
-                            <option>01</option>
-                            <option>02</option>
-                            <option>03</option>
-                            <option>04</option>
-                            <option>05</option>
-                            <option>06</option>
-                            <option>07</option>
-                            <option>08</option>
-                            <option>09</option>
-                            <option>10</option>
-                            <option>11</option>
-                            <option>12</option>
-                            <option>13</option>
-                            <option>14</option>
-                            <option>15</option>
-                            <option>16</option>                                                                
-                            <option>17</option>
-                            <option>18</option>
-                            <option>19</option>
-                            <option>20</option>
-                            <option>21</option>
-                            <option>22</option>
-                            <option>23</option>
-                            <option>24</option>
-                            <option>25</option>
-                            <option>26</option>
-                            <option>27</option>
-                            <option>28</option>
-                            <option>29</option>
-                            <option>30</option>
-                            <option>31</option>
-                        </select>
-                    </div> 
-                
-                    <!-- Mes -->
-                    <div class="form-group col-xs-2">                              
-                        <select id="inputMes" class="form-control">
-                            <option disabled selected>Mes</option>
-                            <option>01</option>
-                            <option>02</option>
-                            <option>03</option>
-                            <option>04</option>
-                            <option>05</option>
-                            <option>06</option>
-                            <option>07</option>
-                            <option>08</option>
-                            <option>09</option>
-                            <option>10</option>
-                            <option>11</option>
-                            <option>12</option>
-                        </select>
-                    </div>
-                
-                    <!-- Año -->
-                    <div class="form-group col-xs-2">                              
-                        <select id="inputAño" class="form-control">
-                            <option disabled selected>Año</option>
-                            <option>2001</option>
-                            <option>2000</option>
-                            <option>1999</option>
-                            <option>1998</option>
-                            <option>1997</option>
-                            <option>1996</option>             
-                            <option>1995</option>
-                            <option>1994</option>
-                            <option>1993</option>
-                            <option>1992</option>
-                            <option>1991</option>
-                            <option>1990</option>
-                            <option>1989</option>
-                            <option>1988</option>
-                            <option>1987</option>
-                            <option>1986</option>
-                            <option>1985</option>
-                            <option>1984</option>
-                            <option>1983</option>
-                            <option>1982</option>
-                            <option>1981</option>
-                            <option>1980</option>
-                            <option>1979</option>
-                            <option>1978</option>
-                            <option>1977</option>
-                            <option>1976</option>
-                            <option>1975</option>
-                            <option>1974</option>
-                            <option>1973</option>
-                            <option>1972</option>
-                            <option>1971</option>
-                            <option>1970</option>
-                            <option>1969</option>
-                            <option>1968</option>
-                            <option>1967</option>
-                            <option>1966</option>
-                            <option>1965</option>
-                            <option>1964</option>
-                            <option>1963</option>
-                            <option>1962</option>
-                            <option>1961</option>
-                            <option>1960</option>
-                            <option>1959</option>
-                            <option>1958</option>
-                            <option>1957</option>
-                            <option>1956</option>
-                            <option>1955</option>
-                            <option>1954</option>
-                            <option>1953</option>
-                        </select>
-                    </div>
+                    <label style="padding-left: 0.5rem">Fecha de Nacimiento:</label>                                    
+                    <div class="form-group col-xs-8" style="padding-left: 3rem">                
+                        <input type="date" ([ngModel])="fecha" class="form-control" id="fecha"required>              
+                    </div>    
                 </div>  
-                <hr>
+                <hr style="border-top-color: aquamarine">
 
 
                 <!-- Género -->
                 <div class="form-row">
                     <label>Género</label>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                        <label class="form-check-label" for="inlineRadio1">Masculino</label>
+                        <input class="form-check-input" ([ngModel])="genero" type="radio" id="inlineRadio1" value="masculino">
+                        <label class="form-check-label">Masculino</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                        <label class="form-check-label" for="inlineRadio2">Femenino</label>
+                        <input class="form-check-input" ([ngModel])="genero" type="radio" id="inlineRadio2" value="femenino">
+                        <label class="form-check-label">Femenino</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-                        <label class="form-check-label" for="inlineRadio3">Otro</label>
+                        <input class="form-check-input" ([ngModel])="genero" type="radio" id="inlineRadio3" value="otro">
+                        <label class="form-check-label">Otro</label>
                     </div>
                 </div>                  
-                <hr>
+                <hr style="border-top-color: aquamarine">
             
 
                 <!-- Sueldo -->
                 <div class="form-group">  
-                    <label>Sueldo</label>                          
-                    <select id="inputDia" class="form-control">
+                    <label>Sueldo Bruto</label>                          
+                    <select id="inputDia" ([ngModel])="sueldo" class="form-control" required>
                         <option disabled selected>Renta</option>
-                        <option>Menor que $100.000</option>
-                        <option>$100.000 - $200.000</option>
-                        <option>$200.000 - $300.000</option>
-                        <option>$300.000 - $400.000</option>
-                        <option>$400.000 - $500.000</option>
-                        <option>$500.000 - $600.000</option>
-                        <option>$600.000 - $700.000</option>
-                        <option>$700.000 - $800.000</option>
-                        <option>$800.000 - $900.000</option>
-                        <option>$900.000 - $1.000.000</option>
-                        <option>Mayor que $1.000.000</option>
+                        <option>$400.000 - $600.000</option>
+                        <option>$600.001 - $1.300.000</option>
+                        <option>$1.300.001 - $2.500.000</option>
+                        <option>$2.500.001 y más</option>
                     </select>
                 </div> 
-                <hr>    
+                <hr style="border-top-color: aquamarine">    
             
             
                 <!-- Email -->
                 <div class="form-group">
                     <label for="inputAddress2">Correo Electrónico</label>
-                    <input type="email" class="form-control" id="inputAddress2" placeholder="cco@example.com">
+                    <input type="email" ([ngModel])="email" class="form-control" id="inputAddress2" placeholder="cco@example.com" required>
                 </div> 
 
 
-                <!-- Contraseña -->                                      
+                <!-- Contraseña -->   
                 <div class="form-group">
                     <label for="inputPassword">Contraseña</label>
-                    <input type="password" id="password" class="form-control col"  minlength="6" maxlength="15" required>
+                    <input type="password" ([ngModel])="pass" id="clave1" class="form-control col"  minlength="6" maxlength="15" required>
                     <small id="inputpassword" class="text-muted">
                         Debe tener 6-15 caracteres de longitud.
                     </small>
                 </div>
-                <div class="form-group">
+                <!-- <div class="form-group">
                     <label>Confirmar Contraseña</label>
-                    <input type="password" id="confirm_password" class="form-control col"  minlength="6" maxlength="15" required>                                
-                </div>            
-            
-            
+                    <input type="password" id="clave2" class="form-control col"  minlength="6" maxlength="15" required>                                
+                </div>                                 -->
+                
+                
+
+
+
+
                 <!-- Button trigger modal -->
-                <button type="button" class="btn-lg btn-block btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                <button type="submit" (click)="registrarse()" class="btn-lg btn-block btn-primary" data-toggle="modal" data-target="#exampleModalCenter" onclick="comprobarClave()">
                     Registrarse
                 </button> 
 
-                <!-- Modal Button-->
-                <div class="modal fade " id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content alert-success">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalCenterTitle">¡Bienvenido!</h5>
-                            </div>
-                            <div class="modal-body">
-                                ¡¡Gracias por elegirnos!!
-                            </div>
-                            <div class="modal-footer" id="enviar">
-                                <button type="sumbit" class="btn btn-primary" href="#">Ok</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </form>                                                                                    
         </div>  
     </div>           

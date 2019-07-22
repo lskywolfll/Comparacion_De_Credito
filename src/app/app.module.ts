@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -23,6 +24,7 @@ import { CreateBankComponent } from './components/create-bank/create-bank.compon
 import { AdministracionComponent } from './components/administracion/administracion.component';
 import { HomeComponent } from './components/home/home.component';
 import { HomeUserComponent } from './components/home-user/home-user.component';
+import { RegisterService } from './services/register.service';
 
 @NgModule({
   declarations: [
@@ -50,9 +52,12 @@ import { HomeUserComponent } from './components/home-user/home-user.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    RegisterService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
