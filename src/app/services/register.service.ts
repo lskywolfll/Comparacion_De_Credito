@@ -17,7 +17,7 @@ export class RegisterService {
   // }
 
   registrarEnServidor(nombre:string, apellido:string, rut:string, fecha:string, genero:string, sueldo:number, email:string, password:string){
-    return this.http.post("localhost:8080/api/create",{
+    return this.http.post("localhost:8080/api/users/createUser",{
       // Parametros para enviarlo a ala api(en la base de datos)
       nombre:nombre,
       apellido:apellido,

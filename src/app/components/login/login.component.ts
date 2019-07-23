@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
 
     // validaciones de campos 
 
-    if( this.pass.length > 5 && this.pass.length < 17  ){
+    if( this.pass.length > 5 && this.pass.length < 16 ){
 
     }
     else{

@@ -6,7 +6,7 @@
             <div>
                 <nav class="navbar navbar-expand-lg navbar-dark">
                     <nav class="navbar navbar-light " id="logo-nav">
-                        <a class="navbar-brand" href="#">
+                        <a class="navbar-brand" href="#">                        
                             <img src="https://i.imgur.com/NGrFzDf.png" width="50" height="50">
                             Comparación de Créditos
                         </a>
@@ -88,19 +88,23 @@
                 <!-- Género -->
                 <div class="form-row">
                     <label>Género</label>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" ([ngModel])="genero" type="radio" id="inlineRadio1" value="masculino">
-                        <label class="form-check-label">Masculino</label>
+                    <!-- Masculino -->
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" ([ngModel])="genero" id="materialGroupExample1" name="generoRadios" value="masculino">
+                        <label class="form-check-label" for="materialGroupExample1">Masculino</label>
                     </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" ([ngModel])="genero" type="radio" id="inlineRadio2" value="femenino">
-                        <label class="form-check-label">Femenino</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" ([ngModel])="genero" type="radio" id="inlineRadio3" value="otro">
-                        <label class="form-check-label">Otro</label>
+                    <!-- Femenino -->
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" ([ngModel])="genero"  id="materialGroupExample2" name="generoRadios" value="femenino">
+                        <label class="form-check-label" for="materialGroupExample2">Femenino</label>
+                    </div>      
+                    <!-- Otro -->
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" ([ngModel])="genero" id="materialGroupExample3" name="generoRadios" value="otro">
+                        <label class="form-check-label" for="materialGroupExample3">Otro</label>
                     </div>
                 </div>                  
+                
                 <hr style="border-top-color: aquamarine">
             
 
@@ -144,7 +148,7 @@
 
 
                 <!-- Button trigger modal -->
-                <button type="submit" (click)="registrarse()" class="btn-lg btn-block btn-primary" data-toggle="modal" data-target="#exampleModalCenter" onclick="comprobarClave()">
+                <button type="submit" (click)="registrarse()" class="btn-lg btn-block btn-primary" onclick="comprobarClave()">
                     Registrarse
                 </button> 
 

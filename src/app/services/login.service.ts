@@ -10,7 +10,7 @@ export class LoginService {
 
   loginPost( email:string, pass:string){
 
-    return this.http.post( 'localhost:4200', {email:email, pass:pass});
+    return this.http.post( 'localhost:8080', {email:email, pass:pass});
     
   };
 }
