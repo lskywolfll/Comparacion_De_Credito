@@ -25,8 +25,12 @@ import { AdministracionComponent } from './components/administracion/administrac
 import { HomeComponent } from './components/home/home.component';
 import { HomeUserComponent } from './components/home-user/home-user.component';
 import { RegisterService } from './services/register.service';
+<<<<<<< Updated upstream
 import { LoginService } from './services/login.service';
 import { AdministracionService } from './services/administracion.service';
+=======
+import { PasswordComponent } from './components/password/password.component';
+>>>>>>> Stashed changes
 
 @NgModule({
   declarations: [
@@ -50,7 +54,8 @@ import { AdministracionService } from './services/administracion.service';
     CreateBankComponent,
     AdministracionComponent,
     HomeComponent,
-    HomeUserComponent
+    HomeUserComponent,
+    PasswordComponent
   ],
   imports: [
     BrowserModule,

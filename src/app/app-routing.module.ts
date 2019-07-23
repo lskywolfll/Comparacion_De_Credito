@@ -8,6 +8,7 @@ import { CreateBankComponent } from './components/create-bank/create-bank.compon
 import { RegistrarseComponent } from './components/registrarse/registrarse.component';
 import { HomeComponent } from './components/home/home.component';
 import { HomeUserComponent } from './components/home-user/home-user.component';
+import { PasswordComponent } from './components/password/password.component';
 
 const routes: Routes = [
   {path: "login", component:LoginComponent},
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path: "user/informaciones", component:InfoUserComponent},
   {path: "createCredit", component:CreateBankComponent},
   {path: "register", component:RegistrarseComponent},
+  {path: "password", component:PasswordComponent},
   {path: "login/home", component:HomeUserComponent },
   {path: "**", component:HomeComponent}
 ];  
