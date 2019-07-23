@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { LoginService } from 'src/app/services/login.service';
 
 @Component({
   selector: 'app-login',
@@ -8,11 +10,27 @@ import { Component, OnInit } from '@angular/core';
 
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  email:string;
+  pass:string;
+
+  constructor( private service:LoginService) { }
 
   ngOnInit() {
   }
 
-  correo:string;
-  
+  login(){
+
+    // validaciones de campos 
+
+    if( this.pass.length > 5 && this.pass.length < 17  ){
+
+    }
+    else{
+      
+    }
+
+    // invoco al servicio para conectar con servidor java
+    this.service.loginPost( this.email, this.pass );
+  }
+
 }

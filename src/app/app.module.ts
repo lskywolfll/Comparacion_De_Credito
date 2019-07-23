@@ -25,6 +25,8 @@ import { AdministracionComponent } from './components/administracion/administrac
 import { HomeComponent } from './components/home/home.component';
 import { HomeUserComponent } from './components/home-user/home-user.component';
 import { RegisterService } from './services/register.service';
+import { LoginService } from './services/login.service';
+import { AdministracionService } from './services/administracion.service';
 
 @NgModule({
   declarations: [
@@ -56,7 +58,9 @@ import { RegisterService } from './services/register.service';
     AppRoutingModule
   ],
   providers: [
-    RegisterService
+    RegisterService,
+    LoginService,
+    AdministracionService
   ],
   bootstrap: [AppComponent]
 })

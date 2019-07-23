@@ -2,12 +2,12 @@
     <h1>Login</h1>
     <form>
         <div class="form-group">
-          <label for="idInputEmail">Nombre</label>
-          <input type="email" class="form-control" id="idInputEmail" placeholder="Ingresar nombre usuario">
+          <label>Nombre</label>
+          <input type="email" ([ngModel])="email" class="form-control" id="idInputEmail" placeholder="Ingresar nombre usuario">
         </div>
         <div class="form-group">
-          <label for="idInputPassword1">Contraseña</label>
-          <input type="password" class="form-control" id="idInputPassword1" placeholder="*************">
+          <label>Contraseña</label>
+          <input type="password" ([ngModel])="pass" class="form-control" id="idInputPassword1" placeholder="*************">
         </div>
         <!-- <div class="form-group form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
