@@ -1,7 +1,7 @@
 /* NavBar */
 .navbar{
     background-color: #539cd3;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
 }
 #logo{
     border: none;
@@ -21,10 +21,12 @@ a {
 
 /* Container del centro */
 #izquierdo{
-    width: 60rem;
+    width: 65rem;
     height: 70rem;
+    margin-left: 0.5rem;
     border: 1px solid black;
-    background-color: aliceblue;
+    background-color: teal;
+    border-bottom-color: transparent;
 }
 
 /* Formulario */
@@ -47,14 +49,19 @@ a {
 }
 /* -------------------------------------------- */
 
+#contenedor-card{
+    width: 35rem;   
+    background-color: whitesmoke;
+}
 /* Card derecha */
 #card{
     border-radius: 25px;
     width: 25rem;
-    border: 1px solid black;
-    background-color: aquamarine;
+    border: 1.5px solid black;
+    background-color: rgb(245, 249, 253);
     margin-top: 10rem;
-    margin-left: 3rem;
+    margin-left: 5rem;
+    margin-right: 10rem;
     padding: 1rem;
 }
 
