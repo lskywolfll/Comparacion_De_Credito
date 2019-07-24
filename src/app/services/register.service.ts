@@ -16,16 +16,16 @@ export class RegisterService {
   //                                              fecha:fecha, genero:genero, sueldo:sueldo, email:email, pass:pass} );
   // }
 
-  registrarEnServidor(nombre:string, apellido:string, rut:string, fecha:string, genero:string, sueldo:number, email:string, password:string){
-    return this.http.post("localhost:8080/api/users/createUser",{
+  registrarEnServidor(nombre:string, apellido:string, rut:string, fecha_de_nacimiento:Date, genero:string, sueldo:number, correo:string, password:string){
+    return this.http.post("http://localhost:9090/api/users/createUser",{
       // Parametros para enviarlo a ala api(en la base de datos)
       nombre:nombre,
       apellido:apellido,
       rut:rut,
-      fecha:fecha,
+      fecha_de_nacimiento:fecha_de_nacimiento,
       genero:genero,
       sueldo:sueldo,
-      email:email,
+      correo:correo,
       password:password
     })
   }

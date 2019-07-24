@@ -9,23 +9,14 @@ import { RegisterService } from 'src/app/services/register.service';
 })
 export class RegistrarseComponent implements OnInit {
   
-  // nombre:string;
-  // apellido:string;
-  // rut:number;
-  // digito:string;
-  // fecha:string;
-  // genero:string;
-  // sueldo:number;
-  // email:string;
-  // pass:string;
   nombre:string;
   apellido:string;
   rut:string;
   digito:string;
-  fecha:string;
+  fecha_de_nacimiento:Date;
   genero:string;
   sueldo:number;
-  email:string;
+  correo:string;
   password:string;
 
   constructor( private service:RegisterService ) {}
@@ -57,7 +48,9 @@ export class RegistrarseComponent implements OnInit {
     // }
     console.log("Inicio")
 
-    this.service.registrarEnServidor(this.nombre, this.apellido, (this.rut + this.digito), this.fecha, this.genero, this.sueldo, this.email, this.password);
+    this.service.registrarEnServidor(this.nombre, this.apellido, (this.rut + this.digito), this.fecha_de_nacimiento, this.genero, this.sueldo, this.correo, this.password).subscribe(data =>{
+      console.log(data);
+    });
 
     console.log("Termino")
   }
