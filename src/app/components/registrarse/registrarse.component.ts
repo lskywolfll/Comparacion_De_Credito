@@ -21,6 +21,7 @@ export class RegistrarseComponent implements OnInit {
   nombre:string;
   apellido:string;
   rut:string;
+  digito:string;
   fecha:string;
   genero:string;
   sueldo:number;
@@ -49,13 +50,16 @@ export class RegistrarseComponent implements OnInit {
   // }
 
   registrarse(){
-    if (this.nombre.length > 3 && this.nombre.length < 10) {
-      console.log("Esta todo ok")
-    }else{
-      console.log("wrong")
-    }
+    // if (this.nombre.length > 3 && this.nombre.length < 10) {
+    //   console.log("Esta todo ok")
+    // }else{
+    //   console.log("wrong")
+    // }
+    console.log("Inicio")
 
-    this.service.registrarEnServidor(this.nombre, this.apellido, this.rut, this.fecha, this.genero, this.sueldo, this.email, this.password);
+    this.service.registrarEnServidor(this.nombre, this.apellido, (this.rut + this.digito), this.fecha, this.genero, this.sueldo, this.email, this.password);
+
+    console.log("Termino")
   }
 
 }

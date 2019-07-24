@@ -41,11 +41,11 @@
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label>Nombre</label>
-                            <input type="text" ([ngModel])="nombre" class="form-control" id="nombre" placeholder="Ej: René" required>                              
+                            <input type="text" [(ngModel)]="nombre" class="form-control" id="nombre"  name="nombre" placeholder="Ej: René" required>
                         </div>                          
                         <div class="form-group col-md-6">
                             <label>Apellido</label>
-                            <input type="text" ([ngModel])="apellido" class="form-control" id="apellido" placeholder="Ej: Sanchéz" required>
+                            <input type="text" [(ngModel)]="apellido" class="form-control" id="apellido" name="apellido" placeholder="Ej: Sanchéz" required>
                         </div>
                     </div>
 
@@ -53,11 +53,11 @@
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label>Rut</label>
-                            <input type="text" ([ngModel])="rut" oninput="this.value=this.value.replace(/[^0-9]/g,'');" class="form-control" id="rut" placeholder="12345678" minlength="3" maxlength="8" required>
+                            <input type="text" [(ngModel)]="rut" oninput="this.value=this.value.replace(/[^0-9]/g,'');" class="form-control" id="rut" name="rut" placeholder="12345678" minlength="3" maxlength="8" required>
                         </div>                              
                     <div class="form-group col-md-2">
                         <label>Dígito</label>
-                        <select id="inputDigit" ([ngModel])="digito" class="form-control" required>
+                        <select id="inputDigit" [(ngModel)]="digito" class="form-control" name="digito" required>
                             <option disabled selected></option>
                             <option>K</option>
                             <option>0</option>
@@ -79,7 +79,7 @@
                 <div class="form-row">
                     <label style="padding-left: 0.5rem">Fecha de Nacimiento:</label>                                    
                     <div class="form-group col-xs-8" style="padding-left: 3rem">                
-                        <input type="date" ([ngModel])="fecha" class="form-control" id="fecha"required>              
+                        <input type="date" [(ngModel)]="fecha" class="form-control" id="fecha" name="fecha" required>              
                     </div>    
                 </div>  
                 <hr style="border-top-color: aquamarine">
@@ -90,17 +90,17 @@
                     <label>Género</label>
                     <!-- Masculino -->
                     <div class="form-check">
-                        <input type="radio" class="form-check-input" ([ngModel])="genero" id="materialGroupExample1" name="generoRadios" value="masculino">
+                        <input type="radio" class="form-check-input" [(ngModel)]="genero" id="materialGroupExample1" name="genero" value="masculino">
                         <label class="form-check-label" for="materialGroupExample1">Masculino</label>
                     </div>
                     <!-- Femenino -->
                     <div class="form-check">
-                        <input type="radio" class="form-check-input" ([ngModel])="genero"  id="materialGroupExample2" name="generoRadios" value="femenino">
+                        <input type="radio" class="form-check-input" [(ngModel)]="genero"  id="materialGroupExample2" name="genero" value="femenino">
                         <label class="form-check-label" for="materialGroupExample2">Femenino</label>
                     </div>      
                     <!-- Otro -->
                     <div class="form-check">
-                        <input type="radio" class="form-check-input" ([ngModel])="genero" id="materialGroupExample3" name="generoRadios" value="otro">
+                        <input type="radio" class="form-check-input" [(ngModel)]="genero" id="materialGroupExample3" name="genero" value="otro">
                         <label class="form-check-label" for="materialGroupExample3">Otro</label>
                     </div>
                 </div>                  
@@ -111,7 +111,7 @@
                 <!-- Sueldo -->
                 <div class="form-group">  
                     <label>Sueldo Bruto</label>                          
-                    <select id="inputDia" ([ngModel])="sueldo" class="form-control" required>
+                    <select id="inputDia" [(ngModel)]="sueldo" class="form-control" name="sueldo" required>
                         <option disabled selected>Renta</option>
                         <option>$400.000 - $600.000</option>
                         <option>$600.001 - $1.300.000</option>
@@ -125,14 +125,14 @@
                 <!-- Email -->
                 <div class="form-group">
                     <label for="inputAddress2">Correo Electrónico</label>
-                    <input type="email" ([ngModel])="email" class="form-control" id="inputAddress2" placeholder="cco@example.com" required>
+                    <input type="email" [(ngModel)]="email" class="form-control" id="inputAddress2" placeholder="cco@example.com" name="email" required>
                 </div> 
 
 
                 <!-- Contraseña -->   
                 <div class="form-group">
                     <label for="inputPassword">Contraseña</label>
-                    <input type="password" ([ngModel])="pass" id="clave1" class="form-control col"  minlength="6" maxlength="15" required>
+                    <input type="password" [(ngModel)]="password" id="clave1" name="password" class="form-control col"  minlength="6" maxlength="15" required>
                     <small id="inputpassword" class="text-muted">
                         Debe tener 6-15 caracteres de longitud.
                     </small>
@@ -148,7 +148,7 @@
 
 
                 <!-- Button trigger modal -->
-                <button type="submit" (click)="registrarse()" class="btn-lg btn-block btn-primary" onclick="comprobarClave()">
+                <button type="submit" (click)="registrarse()" class="btn-lg btn-block btn-primary">
                     Registrarse
                 </button> 
 
