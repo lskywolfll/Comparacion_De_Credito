@@ -1,10 +1,9 @@
 export class User{
-    nombre:string
-    apellido:string
-    password:string
-    rut:string
-    fecha_de_nacimiento:Date
-    genero:string
-    correo:string
-    renta:number
+    nombre:string;
+    apellido:string;
+    password:string;
+    rut:string;
+    fecha_de_nacimiento:Date;
+    correo:string;
+    renta:number;
 }
