@@ -9,6 +9,8 @@ import { RegistrarseComponent } from './components/registrarse/registrarse.compo
 import { HomeComponent } from './components/home/home.component';
 import { HomeUserComponent } from './components/home-user/home-user.component';
 import { PasswordComponent } from './components/password/password.component';
+import { HomeAdminComponent } from './components/home-admin/home-admin.component';
+import { HomeEjecutivoComponent } from "./components/home-ejecutivo/home-ejecutivo.component";
 
 const routes: Routes = [
   {path: "login", component:LoginComponent},
@@ -18,6 +20,8 @@ const routes: Routes = [
   {path: "register", component:RegistrarseComponent},
   {path: "password", component:PasswordComponent},
   {path: "login/home", component:HomeUserComponent },
+  {path: "admin", component:HomeAdminComponent},
+  {path: "ejecutivo", component:HomeEjecutivoComponent},
   {path: "**", component:HomeComponent}
 ];  
 

@@ -1,9 +1,99 @@
-.card{
-    margin: auto;
-    margin-top: 5rem;
+/* NavBar */
+.navbar{
+    background-color: #539cd3;
+    border-bottom: 2px solid black;
+}
+#logo{
+    border: none;
+}
+a {
+    color: aliceblue;
+}
+.btn{
+    border-color: white;
 }
 
-.container{
-    width: 15rem;
-    margin-top: 5rem;
+/* ---------------------------------------- */
+/* body */
+.form-group{
+    margin-bottom: 0%;
+}
+
+/* Container del centro */
+#izquierdo{
+    width: 65rem;
+    height: 70rem;
+    margin-left: 0.5rem;
+    border: 1px solid black;
+    background-color: teal;
+    border-bottom-color: transparent;
+}
+
+/* Formulario */
+#formulario{
+    border-radius:40px;
+    padding: 2rem;
+    margin-top: 13rem;
+    margin-left: 15rem;
+    border: 1px solid black;
+    background-color: azure;
+    width: 35rem;
+    height: 42rem;
+}
+#nombre_banco{
+    border: 1px solid slateblue;
+}
+#tasa{
+    width: 92%;
+    border: 1px solid slateblue;
+}
+/* -------------------------------------------- */
+
+#contenedor-card{
+    width: 35rem;   
+    background-color: whitesmoke;
+}
+/* Card derecha */
+#card{
+    border-radius: 25px;
+    width: 25rem;
+    border: 1.5px solid black;
+    background-color: rgb(245, 249, 253);
+    margin-top: 10rem;
+    margin-left: 5rem;
+    margin-right: 10rem;
+    padding: 1rem;
+}
+
+/* Imagen Card */
+.contenedor-img{
+    border: 2px solid black;
+    width: 334px;
+    height: 210px;
+    background-color: beige;
+    padding: 5px;
+    margin-left: 1rem;
+}
+#img-card{
+    width: 280px; 
+    height: 200px;  
+    margin-left: 0.5rem
+}
+
+/* ------------------------------------------------ */
+
+#footer-top{
+    border: 1px solid black;
+}
+.footer{
+    background-color: black;
+}
+#footer-1{
+    color: white;
+}
+#footer-container{
+    color: white;
+}
+#copyright{
+    color: aliceblue;
 }
