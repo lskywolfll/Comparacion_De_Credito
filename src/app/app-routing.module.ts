@@ -9,6 +9,7 @@ import { RegistrarseComponent } from './components/registrarse/registrarse.compo
 import { HomeComponent } from './components/home/home.component';
 import { HomeUserComponent } from './components/home-user/home-user.component';
 import { PasswordComponent } from './components/password/password.component';
+import { CompararCreditoComponent } from './components/comparar-credito/comparar-credito.component';
 
 const routes: Routes = [
   {path: "login", component:LoginComponent},
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: "register", component:RegistrarseComponent},
   {path: "password", component:PasswordComponent},
   {path: "login/home", component:HomeUserComponent },
+  {path: "compararCredito", component:CompararCreditoComponent},
   {path: "**", component:HomeComponent}
 ];  
 
