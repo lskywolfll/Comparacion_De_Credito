@@ -4,6 +4,7 @@ export class User{
     password:string;
     rut:string;
     fecha_de_nacimiento:Date;
+    genero:string;
     correo:string;
-    renta:number;
+    sueldo_bruto:number;
 }
