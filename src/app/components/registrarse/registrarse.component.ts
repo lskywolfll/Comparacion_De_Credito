@@ -9,6 +9,7 @@ import { User } from 'src/app/Modelo/User';
   styleUrls: ['./registrarse.component.css']
 })
 export class RegistrarseComponent implements OnInit {
+
   
   nombre:string;
   apellido:string;
