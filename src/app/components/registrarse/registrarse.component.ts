@@ -8,6 +8,7 @@ import { RegisterService } from 'src/app/services/register.service';
   styleUrls: ['./registrarse.component.css']
 })
 export class RegistrarseComponent implements OnInit {
+
   
   nombre:string;
   apellido:string;
@@ -32,7 +33,6 @@ export class RegistrarseComponent implements OnInit {
 
   //   }
   //   else{
-      
   //   }
 
   //   // invoco al servicio para conectar con servidor java
