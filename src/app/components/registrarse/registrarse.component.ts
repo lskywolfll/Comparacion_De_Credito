@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { RegisterService } from 'src/app/services/register.service';
+import { User } from 'src/app/Modelo/User';
 
 @Component({
   selector: 'app-registrarse',
@@ -19,26 +20,12 @@ export class RegistrarseComponent implements OnInit {
   correo:string;
   password:string;
 
+  user:User;
+
   constructor( private service:RegisterService ) {}
   
   ngOnInit() {
   }
-
-  // registrarse(){
-
-  //   // validaciones de campos 
-
-  //   if( this.nombre.length > 3 && this.nombre.length < 10  ){
-
-  //   }
-  //   else{
-      
-  //   }
-
-  //   // invoco al servicio para conectar con servidor java
-  //   this.service.registrarEnServidor( this.nombre, this.apellido, this.rut, this.digito,
-  //                                     this.fecha, this.genero, this.sueldo, this.email, this.pass);
-  // }
 
   registrarse(){
     // if (this.nombre.length > 3 && this.nombre.length < 10) {
@@ -46,13 +33,17 @@ export class RegistrarseComponent implements OnInit {
     // }else{
     //   console.log("wrong")
     // }
-    console.log("Inicio")
+    console.log("Inicio");
 
-    this.service.registrarEnServidor(this.nombre, this.apellido, (this.rut + this.digito), this.fecha_de_nacimiento, this.genero, this.sueldo, this.correo, this.password).subscribe(data =>{
+    this.service.registrarEnServidor(this.nombre, this.apellido, (this.rut + this.digito), this.fecha_de_nacimiento, this.genero, this.sueldo, this.correo, this.password).subscribe(
+      data =>{
       console.log(data);
-    });
+      }, 
+      err =>{
+        console.log("");
+      });
 
-    console.log("Termino")
+    console.log("Termino");
   }
 
 }
