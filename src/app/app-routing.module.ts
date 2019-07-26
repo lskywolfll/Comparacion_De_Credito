@@ -11,6 +11,7 @@ import { HomeUserComponent } from './components/home-user/home-user.component';
 import { PasswordComponent } from './components/password/password.component';
 import { HomeAdminComponent } from './components/home-admin/home-admin.component';
 import { HomeEjecutivoComponent } from "./components/home-ejecutivo/home-ejecutivo.component";
+import { EditEjecutivoComponent } from "./components/edit-ejecutivo/edit-ejecutivo.component";
 
 const routes: Routes = [
   {path: "login", component:LoginComponent},
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path: "login/home", component:HomeUserComponent },
   {path: "admin", component:HomeAdminComponent},
   {path: "ejecutivo", component:HomeEjecutivoComponent},
+  {path: "ejecutivo/edit", component:EditEjecutivoComponent},
   {path: "**", component:HomeComponent}
 ];  
 
