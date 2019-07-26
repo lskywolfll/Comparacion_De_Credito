@@ -10,7 +10,6 @@ import { TarjetasDeBancoComponent } from './components/tarjetas-de-banco/tarjeta
 import { QuienesSomosComponent } from './components/quienes-somos/quienes-somos.component';
 import { AspectosDeMejoraComponent } from './components/aspectos-de-mejora/aspectos-de-mejora.component';
 import { EjecutivoComponent } from './components/ejecutivo/ejecutivo.component';
-import { AdministradorComponent } from './components/administrador/administrador.component';
 import { CompararCreditoComponent } from './components/comparar-credito/comparar-credito.component';
 import { RegistrarseComponent } from './components/registrarse/registrarse.component';
 import { UsersComponent } from './components/users/users.component';
@@ -28,6 +27,8 @@ import { RegisterService } from './services/register.service';
 import { LoginService } from './services/login.service';
 import { AdministracionService } from './services/administracion.service';
 import { PasswordComponent } from './components/password/password.component';
+import { HomeAdminComponent } from './components/home-admin/home-admin.component';
+import { HomeEjecutivoComponent } from './components/home-ejecutivo/home-ejecutivo.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,6 @@ import { PasswordComponent } from './components/password/password.component';
     QuienesSomosComponent,
     AspectosDeMejoraComponent,
     EjecutivoComponent,
-    AdministradorComponent,
     CompararCreditoComponent,
     RegistrarseComponent,
     UsersComponent,
@@ -52,7 +52,9 @@ import { PasswordComponent } from './components/password/password.component';
     AdministracionComponent,
     HomeComponent,
     HomeUserComponent,
-    PasswordComponent
+    PasswordComponent,
+    HomeAdminComponent,
+    HomeEjecutivoComponent
   ],
   imports: [
     BrowserModule,

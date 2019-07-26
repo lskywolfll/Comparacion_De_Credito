@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { RegisterService } from 'src/app/services/register.service';
+import { User } from 'src/app/Modelo/User';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-registrarse',
@@ -8,58 +10,48 @@ import { RegisterService } from 'src/app/services/register.service';
   styleUrls: ['./registrarse.component.css']
 })
 export class RegistrarseComponent implements OnInit {
+
   
-  // nombre:string;
-  // apellido:string;
-  // rut:number;
-  // digito:string;
-  // fecha:string;
-  // genero:string;
-  // sueldo:number;
-  // email:string;
-  // pass:string;
   nombre:string;
   apellido:string;
   rut:string;
   digito:string;
-  fecha:string;
+  fecha_de_nacimiento:Date;
   genero:string;
   sueldo:number;
-  email:string;
+  correo:string;
   password:string;
-
+  
   constructor( private service:RegisterService ) {}
   
   ngOnInit() {
   }
 
-  // registrarse(){
-
-  //   // validaciones de campos 
-
-  //   if( this.nombre.length > 3 && this.nombre.length < 10  ){
-
-  //   }
-  //   else{
-      
-  //   }
-
-  //   // invoco al servicio para conectar con servidor java
-  //   this.service.registrarEnServidor( this.nombre, this.apellido, this.rut, this.digito,
-  //                                     this.fecha, this.genero, this.sueldo, this.email, this.pass);
-  // }
-
-  registrarse(){
+  registrarse(user){ 
+    console.log(user);
     // if (this.nombre.length > 3 && this.nombre.length < 10) {
     //   console.log("Esta todo ok")
     // }else{
     //   console.log("wrong")
     // }
-    console.log("Inicio")
 
-    this.service.registrarEnServidor(this.nombre, this.apellido, (this.rut + this.digito), this.fecha, this.genero, this.sueldo, this.email, this.password);
+    this.service.registrarEnServidor(/*this.nombre, this.apellido, (this.rut + this.digito), this.fecha_de_nacimiento, this.genero, this.sueldo, this.correo, this.password*/user).subscribe(
+      data =>{
+      console.log("Todo funciona");
 
-    console.log("Termino")
+      Swal.fire(
+        'The Internet?',
+        'That thing is still around?',
+        'question'
+      )
+      
+      console.log(data);
+      }, 
+      err =>{
+        console.log("Esta mal");
+      });
+
+    console.log("Termino");
   }
 
 }

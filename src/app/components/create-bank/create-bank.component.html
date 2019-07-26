@@ -1,6 +1,175 @@
-<div class="container">
-    <div class="modal-body">
-        <h5>Popover in a modal</h5>
-        <p>This <a href="createCredit" role="button" class="btn btn-secondary popover-test" title="Popover title" data-content="Popover body content is set in this attribute.">button</a> triggers a popover on click.</p>
+<div class="overflow" style="overflow: hidden;">
+
+    <!-- Navbar -->
+    <div class="contenedor-nav">
+        <nav class="navbar navbar-expand-lg navbar-dark-gradient fixed-top">
+            <nav class="navbar navbar-light " id="logo">
+                <a class="navbar-brand" href="">
+                    <img src="https://i.imgur.com/LwYbkvC.png" width="70" height="70"> 
+                    CCO Corporation®            
+                </a>
+            </nav> 
+            <div class="collapse navbar-collapse" id="navbar">                                          
+                <a class="nav-link navbar-brand mb-0 h1" href="#"><h4>Créditos</h4></a>
+                <a class="nav-link navbar-brand mb-0 h1" href="#"><h4>Reportes</h4></a>
+            </div>
+    
+            <!-- Navbar - Derecha -->
+            <div class="navbar-collapse">
+                <div class="navbar-nav ml-auto">                
+                    <button type="button" class="btn btn-outline-light nav-link" href="">
+                        <img src="https://imgur.com/PSrY98T.png" class="media-object" style="width:60px; border-radius: 100%">
+                    </button>    
+                </div>
+            </div>  
+        </nav>
     </div>
+
+
+    <div class="row">
+
+        <!-- Contenedor izquierdo -->
+        <div class="form-group" col-lg-6>
+            <div class="contenedor" id="izquierdo">
+                <div class="contenedor" id="izquierda-form">
+                    <!-- Formulario -->
+                <form id="formulario">
+                    <div class="form-group">
+                        <label><h4>Nombre del Banco</h4></label>
+                        <input [(ngModel)]="nombre" name="nombre" type="text" class="form-control" id="nombre_banco" placeholder="CCO Corporation®">                        
+                    </div>
+                
+                    <hr style="border-top-color:  aqua">            
+
+                    <div class="form-group">
+                        <label><h4>Monto Máximo</h4></label>     
+                        <div class="input-group">              
+                            <input type="number" [(ngModel)]="costototal" name="costototal" class="form-control" id="nombre_banco"> 
+                        </div>
+                    </div>
+
+                    <hr style="border-top-color:  aqua">
+
+                    <div class="form-group">
+                        <label><h4>Tasa de Interes</h4></label> 
+                        <div class="input-group">
+                            <input type="number" [(ngModel)]="tasa" name="tasa" class="from-control" id="tasa">                        
+                            <div class="input-group-prepend">
+                            </div>
+                        </div>                      
+                    </div>
+
+                    <hr style="border-top-color:  aqua">
+
+                    <div class="form-group">
+                        <label><h4>CAE</h4></label> 
+                        <div class="input-group">
+                            <input type="number" [(ngModel)]="cae" name="cae" class="from-control" id="tasa">                        
+                            <div class="input-group-prepend">
+                            </div>
+                        </div>                      
+                    </div>
+                </form>
+                </div>
+                
+            </div>
+        
+    </div>
+
+    <!-- Contenedor del Card -->
+    <div class="form-group" id="contenedor-card">
+        <div class="card" id="card">
+            <div class="contenedor-img">
+                <img src="https://i.imgur.com/LwYbkvC.png" class="card-img-top" id="img-card" alt="img">
+            </div>
+            <div class="input-group xs" style="padding: 1rem">
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="inputFile">
+                    <label class="custom-file-label" for="inputGroupFile" aria-describedby="inputFileAdd">Elegir Archivo</label>
+                </div>
+                <div class="input-group-append">
+                    <span class="input-group-text" id="inputFileAdd">Subir</span>
+                </div>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title"> {{ nombre }} </h5>
+            </div>
+            <ul class="list-group list-group-flush">      
+                <div class="input-group">             
+                    <li class="list-group-item" style="width: 90%;margin-left: 1rem"> {{costototal}} </li>                    
+                </div>
+                <div class="input-group">             
+                    <li class="list-group-item" style="width: 90%;margin-left: 1rem"> {{tasa}} </li>
+                </div>
+                <div class="input-group">             
+                    <li class="list-group-item" style="width: 90%;margin-left: 1rem"> {{cae}} </li>
+                </div>      
+            </ul>
+            <div class="card-body">
+                <button class="btn-primary btn-block btn-lg">Añadir</button>
+            </div>
+        </div>
+    </div>
+    <!-- FIN Contenedor del Card -->
+
+
+</div>
+
+
+
+<!-- Footer -->
+<footer class="footer">
+        <div style="background-color: #3a697e;">
+            <div class="container-footer">
+                <div class="row py-3" id="footer-top">
+                    <div class="col text-center" id="footer-1">
+                        <h5>¡Conéctate con nosotros en las redes sociales!</h5>
+                    </div>                  
+                </div>          
+            </div>
+        </div>
+
+        <!-- Footer Fondo -->
+        <div class="container text-center text-md-left mt-4" id="footer-container">
+            <div class="row mt-3">
+
+                <!-- Box Izquierdo -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">        
+                    <!-- Contenido -->
+                    <h6 class="text-uppercase font-weight-bold text-center">CCO</h6>
+                    <h6 class="text-center">Comparación de Créditos</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>"Que tus sueños no sean una meta sino una realidad"</p>
+                </div>  
+
+                <!-- Box Centro -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Contenido -->
+                    <h6 class="text-uppercase font-weight-bold">Redes Sociales</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p><a href="#!">Facebook</a></p>
+                    <p><a href="#!">Instagram</a></p>
+                    <p><a href="#!">Twitter</a></p>
+                </div>
+
+                <!-- Box Derecha -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Contenido -->
+                    <h6 class="text-uppercase font-weight-bold text-center">Contacto</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p><i class="fas fa-home mr-3"></i> Santiago, Chile</p>
+                    <p><i class="fas fa-envelope mr-3"></i> corporation.cco@gmail.com</p>
+                    <p><i class="fas fa-print mr-3"></i>
+                        +569 12345678
+                    </p>
+                </div> 
+            </div>
+        </div>    
+
+
+        <!-- Copyright  -->
+        <div class="footer-copyright text-center py-3" id="copyright">© 2019 Copyright:
+            <a href="#"> CCO Corporation®</a>
+        </div> 
+    </footer>
 </div>
