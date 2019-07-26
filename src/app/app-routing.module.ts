@@ -22,6 +22,7 @@ const routes: Routes = [
   {path: "register", component:RegistrarseComponent},
   {path: "password", component:PasswordComponent},
   {path: "login/home", component:HomeUserComponent },
+  {path: "compararCredito" , component:CompararCreditoComponent},
   {path: "**", component:HomeComponent}
 ];  
 
