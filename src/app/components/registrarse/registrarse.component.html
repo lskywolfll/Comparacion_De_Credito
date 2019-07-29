@@ -36,6 +36,10 @@
                 </div> 
                 
                 <!-- formulario -->
+                <!-- #nombre = "ngForm" -> nos sirve para establecer un tipo de dato any(cualquier cosa) y la ejecucion (ngSubmit)
+                nos sirve para activar un envio de datos por medio de una funcion creada en el ts de nuestro componente conjunto
+                a su servicio correspondiente dandole los valores correspondientes ej: (ngSubmit)="function(nombre.value) -> usarlo
+                de manera similar a un objeto al proporcionar el metodo .value a nuestra funcion de envio -->
                 <form #dataRegistrar="ngForm" (ngSubmit)="registrarse(dataRegistrar.value)">     
                     <!-- Nombre - Apellido -->
                     <div class="form-row">
@@ -79,8 +83,7 @@
                 <div class="form-row">
                     <label style="padding-left: 0.5rem">Fecha de Nacimiento:</label>                                    
                     <div class="form-group col-xs-8" style="padding-left: 3rem">                
-                        <input type="date" [(ngModel)]="fecha_de_nacimiento" class="form-control" id="fecha_de_nacimiento" name="fecha_de_nacimiento" required ngModel>  
-                        {{fecha_de_nacimiento}}            
+                        <input type="date" [(ngModel)]="fecha_de_nacimiento" class="form-control" id="fecha_de_nacimiento" name="fecha_de_nacimiento" required ngModel>
                     </div>    
                 </div>  
                 <hr style="border-top-color: aquamarine">
