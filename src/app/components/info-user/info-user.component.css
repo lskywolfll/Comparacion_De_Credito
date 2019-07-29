@@ -1,7 +1,7 @@
 .overflow{
     overflow-x: hidden;
 }
-
+/* ----------------------------------------------------------- */
 
 /* NavBar */
 .navbar{
@@ -17,12 +17,13 @@ a {
 .btn{
     border-color: white;
 }
-
+/* -------------------------------------------------------------------- */
 
 /* Body */
 .form-group {
     margin-bottom: 0rem;
 }
+
 /* Fondo */
 #medio{
     background: rgb(1,36,56);
@@ -31,6 +32,8 @@ a {
     background: linear-gradient(0deg, rgba(1,36,56,1) 0%, rgba(9,62,92,1) 25%, rgba(105,164,172,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#012438",endColorstr="#69a4ac",GradientType=1);
 }
+
+/* ---------------------------------------------------------- */
 
 /* Container Dinero */
 #money{
@@ -55,6 +58,8 @@ a {
 #separar{
     height: 3rem;
 }
+
+/* --------- */
 
 /* Info */
 #info-container{
@@ -100,7 +105,7 @@ a {
     margin-bottom: 2rem;
 }
 
-
+/* ----------------------------------------------------- */
 
 /* footer */
 .footer{

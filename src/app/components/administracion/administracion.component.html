@@ -1,20 +1,27 @@
 <div class="container">
-    <h1>Login</h1>
-    <form>
-        <div class="form-group">
-          <label>Nombre</label>
-          <input type="email" ([ngModel])="email" class="form-control" id="idInputEmail" placeholder="Ingresar nombre usuario">
-        </div>
-        <div class="form-group">
-          <label>Contraseña</label>
-          <input type="password" ([ngModel])="pass" class="form-control" id="idInputPassword1" placeholder="*************">
-        </div>
-        <!-- <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div> -->
-        <button type="submit" class="btn btn-primary">Ingresar</button>
-      </form>
-      <br>
-      <a href="#" id="olvido">¿Te olvidaste de la contraseña?</a>
+
+<!-- ---------Titulo---------------- -->
+  <h1>Login</h1>
+<!-- ------------------------------- -->
+
+  <form>
+
+    <!-- Nombre -->
+    <div class="form-group">
+      <label>Nombre</label>
+      <input type="email" ([ngModel])="email" class="form-control" id="idInputEmail" placeholder="Ingresar nombre de usuario">
+    </div>
+
+    <!-- Contraseña -->
+    <div class="form-group">
+      <label>Contraseña</label>
+      <input type="password" ([ngModel])="pass" class="form-control" id="idInputPassword1" placeholder="*************">
+    </div>
+
+    <!-- Botón -->
+    <button type="submit" class="btn btn-primary">Ingresar</button>
+
+    <!-- Fin Formulario -->
+  </form>
+
 </div>

@@ -20,8 +20,7 @@ export class AdministracionComponent implements OnInit {
 
   administracion(){
 
-    // validaciones de campos 
-
+    // validaciones de campos
     if( this.pass.length > 5 && this.pass.length < 17  ){
 
     }

@@ -13,7 +13,8 @@ a {
     border-color: white;
 }
 
-/* ---------------------------------------- */
+/* ----------------- FIN NAVBAR -------------------- */
+
 /* body */
 .form-group{
     margin-bottom: 0%;
@@ -28,6 +29,7 @@ a {
     background-color: teal;
     border-bottom-color: transparent;
 }
+
 #izquierda-form{
     background-color: whitesmoke;
     width: 50rem;
@@ -56,12 +58,14 @@ a {
     width: 100%;
     border: 1px solid slateblue;
 }
+
 /* -------------------------------------------- */
 
 #contenedor-card{
     width: 35rem;   
     background-color: whitesmoke;
 }
+
 /* Card derecha */
 #card{
     border-radius: 25px;

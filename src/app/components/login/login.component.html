@@ -1,23 +1,29 @@
 <div class="container">
-    <h1>Login</h1>
+ 
+  <h1>Login</h1>
+ 
     <form>
-        <div class="form-group">
-          <label>Ingresar Correo</label>
-          <input type="email" ([ngModel])="email" class="form-control" id="idInputEmail" placeholder="nombre@gmail.com" required>
-        </div>
-        <div class="form-group">
-          <label>contraseña</label>
-          <input type="password" ([ngModel])="pass" class="form-control" id="idInputPassword1" placeholder="********" required>
-        </div>
-        <!-- <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div> -->
-        <button type="button" routerLink="home" router-link-active="active-link" class="btn btn-primary">Ingresar</button>
-      </form>
       
-      <br>
-      <a href="password" id="olvido">¿Te olvidaste de la contraseña?</a>
-      <br>
-      <a routerLink="Administracion">Ingresar como ejecutivo o administrador.</a>
+      <div class="form-group">
+        <label>Ingresar Correo</label>
+        <input type="email" ([ngModel])="email" class="form-control" id="idInputEmail" placeholder="nombre@gmail.com" required>
+      </div>
+      
+      <div class="form-group">
+        <label>contraseña</label>
+        <input type="password" ([ngModel])="pass" class="form-control" id="idInputPassword1" placeholder="********" required>
+      </div>
+      
+      <button type="button" routerLink="home" router-link-active="active-link" class="btn btn-primary">Ingresar</button>
+    
+    </form>
+      
+    <br>
+    
+    <a href="password" id="olvido">¿Te olvidaste de la contraseña?</a>
+    
+    <br>
+    
+    <a routerLink="Administracion">Ingresar como ejecutivo o administrador.</a>
+
 </div>

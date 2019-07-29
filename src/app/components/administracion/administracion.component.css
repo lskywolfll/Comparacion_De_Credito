@@ -1,3 +1,4 @@
+/* Contenedor Formulario */
 .container{
     width: 30rem;
     margin-top: 5rem;
@@ -10,6 +11,7 @@
     padding: 2rem;
 }
 
+/* Botón */
 input{
     border: 1px solid black;
     width: 15rem;
