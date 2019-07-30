@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { RegisterService } from 'src/app/services/register.service';
-import { User } from 'src/app/Modelo/User';
 import Swal from 'sweetalert2';
 
 @Component({
@@ -10,7 +9,6 @@ import Swal from 'sweetalert2';
   styleUrls: ['./registrarse.component.css']
 })
 export class RegistrarseComponent implements OnInit {
-
   
   nombre:string;
   apellido:string;
@@ -21,37 +19,34 @@ export class RegistrarseComponent implements OnInit {
   sueldo:number;
   correo:string;
   password:string;
-  
+
   constructor( private service:RegisterService ) {}
   
   ngOnInit() {
   }
-
-  registrarse(user){ 
-    console.log(user);
+  
+  registrarse(){
     // if (this.nombre.length > 3 && this.nombre.length < 10) {
     //   console.log("Esta todo ok")
     // }else{
     //   console.log("wrong")
     // }
+    console.log("Inicio")
 
-    this.service.registrarEnServidor(/*this.nombre, this.apellido, (this.rut + this.digito), this.fecha_de_nacimiento, this.genero, this.sueldo, this.correo, this.password*/user).subscribe(
-      data =>{
-      console.log("Todo funciona");
-
-      Swal.fire(
-        'The Internet?',
-        'That thing is still around?',
-        'question'
-      )
-      
+    this.service.registrarEnServidor(this.nombre, this.apellido, (this.rut + this.digito), this.fecha_de_nacimiento, this.genero, this.sueldo, this.correo, this.password).subscribe(data =>{
+      Swal.fire({
+        position: 'top-end',
+        type: 'success',
+        title: 'Your work has been saved',
+        showConfirmButton: false,
+        timer: 1500
+      })
       console.log(data);
-      }, 
-      err =>{
-        console.log("Esta mal");
-      });
+    }, err =>{
+      console.log("no funciona")
+    });
 
-    console.log("Termino");
+    console.log("Termino")
   }
 
 }

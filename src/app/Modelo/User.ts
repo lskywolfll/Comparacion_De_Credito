@@ -6,5 +6,5 @@ export class User{
     fecha_de_nacimiento:Date;
     genero:string;
     correo:string;
-    sueldo_bruto:number;
+    sueldo:number;
 }
