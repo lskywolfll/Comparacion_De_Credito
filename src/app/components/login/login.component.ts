@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { LoginService } from 'src/app/services/login.service';
+import { UsersService } from 'src/app/services/users.service';
 
 @Component({
   selector: 'app-login',
@@ -11,9 +11,9 @@ import { LoginService } from 'src/app/services/login.service';
 export class LoginComponent implements OnInit {
 
   email:string;
-  pass:string;
+  password:string;
 
-  constructor( private service:LoginService) { }
+  constructor( private service:UsersService) { }
 
   ngOnInit() {
   }
@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
 
     // validaciones de campos 
 
-    if( this.pass.length > 5 && this.pass.length < 16 ){
+    if( this.password.length > 5 && this.password.length < 16 ){
 
     }
     else{
@@ -30,7 +30,11 @@ export class LoginComponent implements OnInit {
     }
 
     // invoco al servicio para conectar con servidor java
-    this.service.loginPost( this.email, this.pass );
+    this.service.ingresar(this.email,this.password).subscribe(data =>{
+      console.log(data)
+    }, err =>{
+      console.log(err)
+    })
   }
 
 }

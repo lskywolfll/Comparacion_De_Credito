@@ -4,76 +4,77 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark-gradient fixed-top">
         <nav class="navbar navbar-light " id="logo">
-            
+
             <a class="navbar-brand" href="#">
-                <img src="https://i.imgur.com/LwYbkvC.png" width="70" height="70"> 
-                CCO Corporation®            
+                <img src="https://i.imgur.com/LwYbkvC.png" width="70" height="70">
+                CCO Corporation®
             </a>
 
-        </nav> 
-        
-        <!-- NavBar - Menu --> 
+        </nav>
+
+        <!-- NavBar - Menu -->
         <div class="navbar-menu">
             <div class="navbar-center">
-                
+
                 <ul class="navbar-nav navbar-center" id="nav_menu">
                     <li class="nav-menu"><a class="nav-link navbar-brand " href="#">Comparar Créditos</a></li>
                     <li class="nav-menu"><a class="nav-link navbar-brand" href="#">Preguntas Frecuentes</a></li>
-                    <li class="nav-menu"><a class="nav-link active navbar-brand" href="#">Sobre Nosotros</a> </li>              
+                    <li class="nav-menu"><a class="nav-link active navbar-brand" href="#">Sobre Nosotros</a> </li>
                 </ul>
 
             </div>
         </div>
-        
+
         <!-- Navbar - Derecha -->
         <div class="navbar-collapse">
-            <div class="navbar-nav ml-auto">                
-                
+            <div class="navbar-nav ml-auto">
+
                 <button type="button" class="btn btn-outline-light nav-link" href="">
-                    <img src="https://imgur.com/PSrY98T.png" class="media-object" style="width:60px; border-radius: 100%">
-                </button>    
+                    <img src="https://imgur.com/PSrY98T.png" class="media-object"
+                        style="width:60px; border-radius: 100%">
+                </button>
             </div>
 
         </div>
     </nav>
     <!-- ---------------------- FIN NAVBAR ---------------------------- -->
-    
+
     <!-- Body -->
-    <div class="form-group"  id="medio">        
-        <div class="form-group col-lg-5" id="info-container">            
-            
+    <div class="form-group" id="medio">
+        <div class="form-group col-lg-5" id="info-container">
+
             <div class="form-grop col-lg-5" id="separar"></div>
-            
+
             <div class="form-group" id="container-info">
-                
+
                 <!-- Bloque 1 -->
                 <div class="navbar " id="nav-container"></div>
-            
+
                 <div class="row">
-            
+
                     <div class="img-cont col-lg-4">
-                        <img src="https://imgur.com/PSrY98T.png" class="media-object" id="img-info">  
-                    </div> 
-            
+                        <img src="https://imgur.com/PSrY98T.png" class="media-object" id="img-info">
+                    </div>
+
                     <div class="info-cont col-lg-3" style="color: white" id="info-cont">
                         <p class="bg-info">Nombre:</p>
                         <p class="bg-info">Apellido:</p>
                     </div>
-            
+
                     <div class="info-cont col-lg-3" id="info-cont">
                         <p>René</p>
                         <p>Sanchez</p>
                     </div>
-            
+
                 </div>
                 <!-- FIN BLOQUE1 -->
 
                 <!-- Bloque 2 -->
                 <div class="navbar " id="nav-container"></div>
-                
+
                 <div class="bloque2">
                     <div class="row">
-                        
+
                         <div class="info-sueldo">
                             <h4 class="bg-info">Su ingreso:</h4>
                             <div class="input-group sm-2">
@@ -83,7 +84,7 @@
                                 <input type="text" class="form-control" id="sueldo" placeholder="200.000" disabled>
                             </div>
                         </div>
-                    
+
                         <div class="info-id">
                             <h4 class="bg-info">Su ID:</h4>
                             <div class="input-group sm-2">
@@ -95,28 +96,33 @@
                         </div>
 
                     </div>
-                
+
                     <!-- Botones -->
                     <div class="row col-lg-12">
-                        <button type="button" class="btn btn-outline-light nav-link" href="" id="boton-info1">Comparar</button>
-                        <button type="button" class="btn btn-outline-light nav-link" href="" id="boton-info2">Historial</button>
+                        <button type="button" class="btn btn-outline-light nav-link" href=""
+                            id="boton-info1">Comparar</button>
+                        <button type="button" class="btn btn-outline-light nav-link" href=""
+                            id="boton-info2">Historial</button>
+                        <button type="button" class="btn btn-danger nav-link" (click)="eliminarUsuarios()">Eliminar</button>
                     </div>
 
-                </div>                        
+                </div>
                 <!-- FIN BLOQUE2 -->
-            
+
             </div>
         </div>
 
         <!-- Bloque dinero -->
         <div class="form-group col-lg-4" id="money">
             <div class="form-group" id="dinero">
-                <div class="navbar justify-content-center" id="nav-container"><h5>Dolar/CLP/EU</h5></div>
+                <div class="navbar justify-content-center" id="nav-container">
+                    <h5>Dolar/CLP/EU</h5>
+                </div>
             </div>
         </div>
 
     </div>
-    
+
     <!-- Footer -->
     <footer class="footer">
         <div style="background-color: #3a697e;">
@@ -124,23 +130,23 @@
                 <div class="row py-3" id="footer-top">
                     <div class="col text-center" id="footer-1">
                         <h5>¡Conéctate con nosotros en las redes sociales!</h5>
-                    </div>                  
-                </div>          
+                    </div>
+                </div>
             </div>
         </div>
-    
+
         <!-- Footer Fondo -->
         <div class="container text-center text-md-left mt-4" id="footer-container">
             <div class="row mt-3">
-    
+
                 <!-- Box Izquierdo -->
-                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">        
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                     <!-- Contenido -->
                     <h6 class="text-uppercase font-weight-bold text-center">CCO</h6>
                     <h6 class="text-center">Comparación de Créditos</h6>
                     <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <p>"Que tus sueños no sean una meta sino una realidad"</p>
-                </div>  
+                </div>
                 <!-- FIN BOX IZQUIERDO -->
 
                 <!-- Box Centro -->
@@ -164,18 +170,18 @@
                     <p><i class="fas fa-print mr-3"></i>
                         +569 12345678
                     </p>
-                </div> 
+                </div>
                 <!-- FIN BOX DERECHA -->
-            
+
             </div>
-        </div>    
-    
+        </div>
+
         <!-- Copyright  -->
         <div class="footer-copyright text-center py-3" id="copyright">© 2019 Copyright:
             <a href="#"> CCO Corporation®</a>
-        </div> 
-    
-    </footer> 
+        </div>
+
+    </footer>
     <!-- FIN FOOTER -->
-</div> 
+</div>
 <!-- FIN OVERFLOW -->

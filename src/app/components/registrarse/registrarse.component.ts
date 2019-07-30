@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { RegisterService } from 'src/app/services/register.service';
 import Swal from 'sweetalert2';
+import { UsersService } from 'src/app/services/users.service';
 
 @Component({
   selector: 'app-registrarse',
@@ -20,11 +20,11 @@ export class RegistrarseComponent implements OnInit {
   correo:string;
   password:string;
 
-  constructor( private service:RegisterService ) {}
+  constructor( private service:UsersService ) {}
   
   ngOnInit() {
   }
-  
+
   registrarse(){
     // if (this.nombre.length > 3 && this.nombre.length < 10) {
     //   console.log("Esta todo ok")

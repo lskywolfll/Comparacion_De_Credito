@@ -23,12 +23,11 @@ import { CreateBankComponent } from './components/create-bank/create-bank.compon
 import { AdministracionComponent } from './components/administracion/administracion.component';
 import { HomeComponent } from './components/home/home.component';
 import { HomeUserComponent } from './components/home-user/home-user.component';
-import { RegisterService } from './services/register.service';
-import { LoginService } from './services/login.service';
 import { AdministracionService } from './services/administracion.service';
 import { PasswordComponent } from './components/password/password.component';
 import { HomeAdminComponent } from './components/home-admin/home-admin.component';
 import { HomeEjecutivoComponent } from './components/home-ejecutivo/home-ejecutivo.component';
+import { UsersService } from './services/users.service';
 
 @NgModule({
   declarations: [
@@ -63,8 +62,7 @@ import { HomeEjecutivoComponent } from './components/home-ejecutivo/home-ejecuti
     AppRoutingModule
   ],
   providers: [
-    RegisterService,
-    LoginService,
+    UsersService,
     AdministracionService
   ],
   bootstrap: [AppComponent]
