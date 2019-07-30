@@ -96,7 +96,7 @@ a {
 }
 #boton-info1{
     margin-top: 2rem;
-    margin-left: 12rem;
+    margin-left: 8rem;
     margin-bottom: 2rem;
 }
 #boton-info2{
@@ -105,6 +105,11 @@ a {
     margin-bottom: 2rem;
 }
 
+#boton-delete{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem; 
+}
 /* ----------------------------------------------------- */
 
 /* footer */
