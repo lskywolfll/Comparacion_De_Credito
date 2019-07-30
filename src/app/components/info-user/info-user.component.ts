@@ -16,13 +16,13 @@ export class InfoUserComponent implements OnInit {
   
   verificar(){
     Swal.fire({
-      title: 'Are you sure?',
-      text: "You won't be able to revert this!",
-      type: 'warning',
+      title: 'Estás seguro?',
+      text: "No podrás revertir esto!",
+      type: 'cuidado',
       showCancelButton: true,
       confirmButtonColor: '#3085d6',
       cancelButtonColor: '#d33',
-      confirmButtonText: 'Yes, delete it!'
+      confirmButtonText: 'Si, eliminar!'
     }).then((result) => {
       if (result.value) {
         this.service.deleteAll().subscribe(data =>{
@@ -31,9 +31,8 @@ export class InfoUserComponent implements OnInit {
           console.log(err)
         })
         Swal.fire(
-          'Deleted!',
-          'Your file has been deleted.',
-          'success'
+          'Eliminado!',
+          'El usuario ha sido eliminado.',
         )
       }
     })
