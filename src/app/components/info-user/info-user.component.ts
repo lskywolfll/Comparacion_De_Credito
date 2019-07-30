@@ -13,19 +13,30 @@ export class InfoUserComponent implements OnInit {
 
   ngOnInit() {
   }
-
-  eliminarUsuarios(){
-    this.service.deleteAll().subscribe(data =>{
-      console.log(data)
-      Swal.fire({
-        position: 'top-end',
-        type: 'success',
-        title: 'Se ha eliminado satisfactoriamente',
-        showConfirmButton: false,
-        timer: 1500
-      })
-    }, err =>{
-      console.log(err);
+  
+  verificar(){
+    Swal.fire({
+      title: 'Are you sure?',
+      text: "You won't be able to revert this!",
+      type: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, delete it!'
+    }).then((result) => {
+      if (result.value) {
+        this.service.deleteAll().subscribe(data =>{
+          console.log(data)
+        }, err =>{
+          console.log(err)
+        })
+        Swal.fire(
+          'Deleted!',
+          'Your file has been deleted.',
+          'success'
+        )
+      }
     })
   }
+
 }
