@@ -31,8 +31,8 @@ export class InfoUserComponent implements OnInit {
           console.log(err)
         })
         Swal.fire(
-          'Eliminado!',
-          'Tu usuario ha sido eliminado.',
+          'Deleted!',
+          'Your file has been deleted.',
           'success'
         )
       }

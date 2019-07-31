@@ -13,6 +13,8 @@ import { EditEjecutivoComponent } from "./components/edit-ejecutivo/edit-ejecuti
 import { HomeEjecutivoComponent } from "./components/home-ejecutivo/home-ejecutivo.component";
 import { HomeAdminComponent } from './components/home-admin/home-admin.component';
 import { CompararCreditoComponent } from './components/comparar-credito/comparar-credito.component';
+import { HistorialComponent } from "./components/historial/historial.component";
+import { UserHistorialComponent } from "./components/user-historial/user-historial.component";
 
 const routes: Routes = [
   {path: "login", component:LoginComponent},
@@ -23,6 +25,8 @@ const routes: Routes = [
   {path: "password", component:PasswordComponent},
   {path: "login/home", component:HomeUserComponent },
   {path: "compararCredito" , component:CompararCreditoComponent},
+  {path: "admin/historial", component:HistorialComponent},
+  {path: "user/historial", component:UserHistorialComponent},
   {path: "**", component:HomeComponent}
 ];  
 

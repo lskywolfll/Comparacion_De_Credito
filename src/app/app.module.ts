@@ -28,6 +28,7 @@ import { PasswordComponent } from './components/password/password.component';
 import { HomeAdminComponent } from './components/home-admin/home-admin.component';
 import { HomeEjecutivoComponent } from './components/home-ejecutivo/home-ejecutivo.component';
 import { UsersService } from './services/users.service';
+import { UserHistorialComponent } from './components/user-historial/user-historial.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { UsersService } from './services/users.service';
     HomeUserComponent,
     PasswordComponent,
     HomeAdminComponent,
-    HomeEjecutivoComponent
+    HomeEjecutivoComponent,
+    UserHistorialComponent
   ],
   imports: [
     BrowserModule,
