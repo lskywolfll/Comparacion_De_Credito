@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { UsersService } from 'src/app/services/users.service';
+import { User } from 'src/app/Modelo/User';
 
 @Component({
   selector: 'app-password',
@@ -8,10 +10,19 @@ import { Router } from '@angular/router';
 })
 export class PasswordComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  user:User[];
 
-  ngOnInit() {
+  constructor(private router:Router, private service:UsersService) { 
+    
   }
 
-  
+  ngOnInit() {
+    this.service.listUsers().subscribe(data =>{
+      
+      console.log(data)
+    }, err =>{
+      console.log(err);
+    })
+  }
+
 }

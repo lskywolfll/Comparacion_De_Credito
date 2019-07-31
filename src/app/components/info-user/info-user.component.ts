@@ -13,16 +13,16 @@ export class InfoUserComponent implements OnInit {
 
   ngOnInit() {
   }
-  
+
   verificar(){
     Swal.fire({
-      title: 'Are you sure?',
-      text: "You won't be able to revert this!",
+      title: 'Estas seguro?',
+      text: "Tu no podras revertir esto!",
       type: 'warning',
       showCancelButton: true,
       confirmButtonColor: '#3085d6',
       cancelButtonColor: '#d33',
-      confirmButtonText: 'Yes, delete it!'
+      confirmButtonText: 'si Eliminar ?'
     }).then((result) => {
       if (result.value) {
         this.service.deleteAll().subscribe(data =>{
@@ -31,8 +31,8 @@ export class InfoUserComponent implements OnInit {
           console.log(err)
         })
         Swal.fire(
-          'Deleted!',
-          'Your file has been deleted.',
+          'Eliminado!',
+          'Tu usuario ha sido eliminado.',
           'success'
         )
       }

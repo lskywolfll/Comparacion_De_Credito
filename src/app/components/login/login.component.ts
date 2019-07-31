@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { UsersService } from 'src/app/services/users.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-login',
@@ -10,31 +11,44 @@ import { UsersService } from 'src/app/services/users.service';
 
 export class LoginComponent implements OnInit {
 
-  email:string;
-  password:string;
+  // email:string;
+  // password:string;
 
-  constructor( private service:UsersService) { }
+  constructor( private service:UsersService,private router:Router) { }
 
   ngOnInit() {
   }
 
-  login(){
-
+  login(password:string,email:string,event:Event){
+    event.preventDefault();
     // validaciones de campos 
 
-    if( this.password.length > 5 && this.password.length < 16 ){
-
+    if(password != null && email != null){
+      // invoco al servicio para conectar con servidor java
+      this.service.ingresar(password,email).subscribe(data =>{
+        console.log(data)
+      }, err =>{
+        Swal.fire({
+          type: 'error',
+          title: 'Oops...',
+          text: 'Tus datos no son validos y/o no existen!',
+          // footer: '<a href>Por que ocurre esto?</a>'
+        })
+        console.log(err)
+      },() => this.navigate()
+      ); 
     }
     else{
-      
+      Swal.fire({
+        type: 'error',
+        title: 'Oops...',
+        text: 'No se ha ingresado correctamente los datos!',
+        // footer: '<a href>Por que ocurre esto?</a>'
+      })
     }
-
-    // invoco al servicio para conectar con servidor java
-    this.service.ingresar(this.email,this.password).subscribe(data =>{
-      console.log(data)
-    }, err =>{
-      console.log(err)
-    })
   }
 
+  navigate(){
+    this.router.navigateByUrl('/home');
+  }
 }
