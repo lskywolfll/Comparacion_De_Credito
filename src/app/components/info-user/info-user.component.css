@@ -81,33 +81,34 @@ a {
 }
 #info-cont{
     padding-top: 3rem;
+    margin-left: 2rem;
 }
 .bloque2{
     background: #748fa1;
 }
 /* --------- */
 .info-sueldo{
-    margin-left: 4rem;
+    margin-left: 7rem;
     margin-top: 1rem;
 }
 .info-id{
     margin-top: 1rem;
-    margin-left: 4rem;
+    margin-left: 7rem;
 }
 #boton-info1{
     margin-top: 2rem;
-    margin-left: 8rem;
+    margin-left: 10rem;
     margin-bottom: 2rem;
 }
 #boton-info2{
     margin-top: 2rem;
-    margin-left: 2rem;
+    margin-left: 4rem;
     margin-bottom: 2rem;
 }
 
 #boton-delete{
     margin-top: 2rem;
-    margin-left: 2rem;
+    margin-left: 4rem;
     margin-bottom: 2rem; 
 }
 /* ----------------------------------------------------- */

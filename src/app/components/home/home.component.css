@@ -36,22 +36,25 @@ a {
     color: blanchedalmond;
 }
 #seba{
-    border-radius: 100%;
-    width: 200px;
-    height: 200px;
-    border: 1px solid black;
+    border-bottom-left-radius: 75%;
+    border-bottom-right-radius: 75%;
+    width: 204px;
+    height: 253px;
+    border: 2px solid black;
 }
 .rect1{
-    border: 1px solid black;
+    border: 2px solid black;
+    margin-top: 0.5rem;
 }
 
 /* ----------------------------------------------------------------------------- */
 /* Sandy */
 #sandy{
-    border-radius: 100%;
-    border: 1px solid black;
-    width: 200px;
-    height: 200px;
+    border-bottom-left-radius: 75%;
+    border-bottom-right-radius: 75%;
+    border: 2px solid black;
+    width: 204px;
+    height: 253px;
 }
 .cuadro2{
     margin-top: 2rem;
@@ -62,15 +65,17 @@ a {
     color: blanchedalmond;
 }
 .rect2{
-    border: 1px solid black;
+    border: 2px solid black;    
+    margin-top: 0.5rem;
 }
 /* ----------------------------------------------------------------------------- */
 /* Rene */
 #rene{ 
-    border-radius: 100%;
-    border: 1px solid black;
-    width: 200px;
-    height: 200px;
+    border-bottom-left-radius: 75%;
+    border-bottom-right-radius: 75%;
+    border: 2px solid black;
+    width: 204px;
+    height: 253px;
 }
 .cuadro3{
     margin-top: 4rem;
@@ -79,30 +84,32 @@ a {
     color: blanchedalmond;
 }
 .rect3{
-    border: 1px solid black;
+    border: 2px solid black;
+    margin-top: 0.5rem;
 }
 
 /* ----------------------------------------------------------------------------- */
 /* Cony */
 #cony{
-    border-radius: 100%;
-    border: 1px solid black;
-    width: 200px;
-    height: 200px;
+    border-bottom-left-radius: 75%;
+    border-bottom-right-radius: 75%;
+    border: 2px solid black;
+    width: 204px;
+    height: 253px;   
 }
 .cuadro4{
-    margin-right: 10rem;
     width: 200px;
     height: 300px;
     color: blanchedalmond;
+    margin-right: 10rem;
 }
 .rect4{
-    border: 1px solid black;
+    border: 2px solid black;
 }
 
-/* ----------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
 /* Rhada */
-#rhada{
+/* #rhada{
     border-radius: 100%;
     border: 1px solid black;
     width: 200px;
@@ -117,11 +124,11 @@ a {
 }
 .rect5{
     border: 1px solid black;
-}
+} */
 
 /* ----------------------------------------------------------------------------- */
 /* Evelyn */
-#evelyn{
+/* #evelyn{
     border-radius: 100%;
     border: 1px solid black;
     width: 200px;
@@ -134,27 +141,46 @@ a {
 }
 .rect6{
     border: 1px solid black;
-}
+} */ 
 
 /* ----------------------------------------------------------------------------- */
 /* Jorge */
 #jorge{
-    border-radius: 100%;
-    border: 1px solid orange;
-    width: 200px;
-    height: 200px;
+    border-bottom-left-radius: 75%;
+    border-bottom-right-radius: 75%;
+    border: 2px solid orange;
+    width: 204px;
+    height: 253px;
 }
 .cuadro7{
-    margin-bottom: 2rem;
     width: 200px;
     height: 300px;
     color: blanchedalmond;
+    margin-right: 5rem;
 }
 .rect7{
-    border: 1px solid orange;
+    border: 2px solid orange;
+    margin-top: 0.5rem;
 }
 /* ----------------------------------------------------------------------------- */
-
+/* Camila */
+#camila{
+    border-bottom-left-radius: 75%;
+    border-bottom-right-radius: 75%;
+    border: 2px solid orange;
+    width: 204px;
+    height: 253px;
+}
+.cuadro8{
+    width: 200px;
+    height: 300px;
+    color: blanchedalmond;
+    margin-left: 5rem;
+}
+.rect8{
+    border: 2px solid orange;
+}
+/* ----------------------------------------------------------------------------- */
 
 
 /* footer */

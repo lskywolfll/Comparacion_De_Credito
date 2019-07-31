@@ -18,7 +18,7 @@ export class InfoUserComponent implements OnInit {
     Swal.fire({
       title: 'Estás seguro?',
       text: "No podrás revertir esto!",
-      type: 'cuidado',
+      type: 'warning',
       showCancelButton: true,
       confirmButtonColor: '#3085d6',
       cancelButtonColor: '#d33',
