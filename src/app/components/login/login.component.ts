@@ -11,21 +11,21 @@ import Swal from 'sweetalert2';
 
 export class LoginComponent implements OnInit {
 
-  // email:string;
-  // password:string;
+  correo:string;
+  password:string;
 
   constructor( private service:UsersService,private router:Router) { }
 
   ngOnInit() {
   }
 
-  login(password:string,email:string,event:Event){
-    event.preventDefault();
+  login(){
+    // event.preventDefault();
     // validaciones de campos 
 
-    if(password != null && email != null){
+    if(this.password != null && this.correo != null){
       // invoco al servicio para conectar con servidor java
-      this.service.ingresar(password,email).subscribe(data =>{
+      this.service.ingresar(this.correo,this.password).subscribe(data =>{
         console.log(data)
       }, err =>{
         Swal.fire({
@@ -49,6 +49,6 @@ export class LoginComponent implements OnInit {
   }
 
   navigate(){
-    this.router.navigateByUrl('/home');
+    this.router.navigateByUrl('/login/home');
   }
 }
