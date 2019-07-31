@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import Swal from 'sweetalert2';
 import { UsersService } from 'src/app/services/users.service';
 
@@ -20,7 +20,7 @@ export class RegistrarseComponent implements OnInit {
   correo:string;
   password:string;
 
-  constructor( private service:UsersService ) {}
+  constructor( private service:UsersService ,private router:Router) {}
   
   ngOnInit() {
   }
@@ -37,16 +37,19 @@ export class RegistrarseComponent implements OnInit {
       Swal.fire({
         position: 'top-end',
         type: 'success',
-        title: 'Your work has been saved',
+        title: 'Te has registrado correctamente',
         showConfirmButton: false,
         timer: 1500
       })
       console.log(data);
     }, err =>{
       console.log("no funciona")
-    });
+    }, () => this.navigate());
 
     console.log("Termino")
   }
 
+  navigate(){
+    this.router.navigateByUrl("/login/home")
+  }
 }

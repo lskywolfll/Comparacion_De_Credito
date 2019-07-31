@@ -41,8 +41,8 @@ export class UsersService {
   }
 
   listUsers() {
-    // return this.http.get<User[]>("http://localhost:9090/api/users/lista")
-    return this.http.get("http://localhost:9090/api/users/lista")
+    return this.http.get<User[]>("http://localhost:9090/api/users/lista");
+    // return this.http.get("http://localhost:9090/api/users/lista")
   }
 
 }
