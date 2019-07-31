@@ -16,6 +16,7 @@ import { CompararCreditoComponent } from './components/comparar-credito/comparar
 import { HistorialComponent } from "./components/historial/historial.component";
 import { UserHistorialComponent } from "./components/user-historial/user-historial.component";
 import { QuienesSomosComponent } from "./components/quienes-somos/quienes-somos.component";
+import { PreguntasFrecuentesComponent } from './components/preguntas-frecuentes/preguntas-frecuentes.component';
 
 const routes: Routes = [
   {path: "login", component:LoginComponent},
@@ -29,6 +30,7 @@ const routes: Routes = [
   {path: "admin/historial", component:HistorialComponent},
   {path: "user/historial", component:UserHistorialComponent},
   {path: "sobreNosotros", component:QuienesSomosComponent},
+  {path: "preguntasFrecuentes", component:PreguntasFrecuentesComponent},
   {path: "**", component:HomeComponent}
 ];  
 
