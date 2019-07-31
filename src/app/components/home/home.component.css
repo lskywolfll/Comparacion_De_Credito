@@ -40,10 +40,10 @@ a {
     border-bottom-right-radius: 75%;
     width: 204px;
     height: 253px;
-    border: 2px solid black;
+    border: 2px solid #00FF00;
 }
 .rect1{
-    border: 2px solid black;
+    border: 2px solid rgb(0, 170, 0);
     margin-top: 0.5rem;
 }
 
@@ -159,7 +159,7 @@ a {
     margin-right: 5rem;
 }
 .rect7{
-    border: 2px solid orange;
+    border: 2px solid rgb(255, 133, 46);
     margin-top: 0.5rem;
 }
 /* ----------------------------------------------------------------------------- */
@@ -167,7 +167,7 @@ a {
 #camila{
     border-bottom-left-radius: 75%;
     border-bottom-right-radius: 75%;
-    border: 2px solid orange;
+    border: 2px solid rgb(250, 131, 191);
     width: 204px;
     height: 253px;
 }
@@ -178,7 +178,7 @@ a {
     margin-left: 5rem;
 }
 .rect8{
-    border: 2px solid orange;
+    border: 2px solid rgb(248, 63, 156);
 }
 /* ----------------------------------------------------------------------------- */
 
