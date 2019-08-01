@@ -6,9 +6,28 @@ import { User } from '../Modelo/User';
   providedIn: 'root'
 })
 export class UsersService {
+  private userLogedIn;
+  private userLogged:User;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) { 
+    this.userLogedIn = false;
+  }
 
+  //Mantener sesion
+  setUserLogedIn(user:User){
+    this.userLogedIn = true;
+    this.userLogged = user;
+    // Palabra clave y valor setItem("clave",valor)
+    localStorage.setItem('currentUser', JSON.stringify(user));
+  }
+
+  getUserLogeedIn(){
+    return JSON.parse(localStorage.getItem('currentUser'));
+  }
+
+  logged(correo:string,password:string){
+    return this.http.get<User>(`http://localhost:9090/api/users/logged/${correo}/${password}`);
+  }
   // http://localhost:9090/ruta del proyecto backend
 
   registrarEnServidor(nombre: string, apellido: string, rut: string, fecha_de_nacimiento: Date, genero: string, sueldo: number, correo: string, password: string) {

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CreditService } from 'src/app/services/credit.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-create-bank',
@@ -7,9 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateBankComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service:CreditService, private router:Router) { }
 
   ngOnInit() {
   }
 
+  
 }

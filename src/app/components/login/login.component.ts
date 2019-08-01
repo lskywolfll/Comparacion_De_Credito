@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { UsersService } from 'src/app/services/users.service';
 import Swal from 'sweetalert2';
+import { User } from 'src/app/Modelo/User';
 
 @Component({
   selector: 'app-login',
@@ -27,6 +28,8 @@ export class LoginComponent implements OnInit {
       // invoco al servicio para conectar con servidor java
       this.service.ingresar(this.correo,this.password).subscribe(data =>{
         console.log(data)
+        // let u:User = this.service.logged(this.correo,this.password);
+        // this.service.setUserLogedIn(u);
       }, err =>{
         Swal.fire({
           type: 'error',
