@@ -45,8 +45,13 @@ export class PasswordComponent implements OnInit {
         title: 'Nombre ?',
         text: 'El nombre ingresado modificara'
       },
-      'Question 2',
-      'Question 3'
+      'Apellido ?',
+      'rut ?',
+      {
+        title: 'Fecha de nacimiento ?',
+        text: 'ej: 25/07/1999'
+      },
+      'genero ?'
     ]).then((result) => {
       if (result.value) {
         Swal.fire({
