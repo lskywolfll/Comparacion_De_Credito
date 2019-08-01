@@ -1,0 +1,199 @@
+.overflow{
+    overflow-x: hidden;
+}
+/* ------------------------------------------------------------------------------ */
+
+/* NavBar */
+.navbar{
+    background-color: #539cd3;
+    border-bottom: 1px solid black;
+}
+#logo{
+    border: none;
+}
+a {
+    color: aliceblue;
+}
+/* ----------------------------------------------------------------------------- */
+
+
+/* Sobre Nosotros */
+.cuerpo{
+    padding-top: 10rem;
+    background: rgb(1,36,56);
+    background: -moz-linear-gradient(0deg, rgba(1,36,56,1) 0%, rgba(9,62,92,1) 25%, rgba(105,164,172,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(1,36,56,1) 0%, rgba(9,62,92,1) 25%, rgba(105,164,172,1) 100%);
+    background: linear-gradient(0deg, rgba(1,36,56,1) 0%, rgba(9,62,92,1) 25%, rgba(105,164,172,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#012438",endColorstr="#69a4ac",GradientType=1);
+}
+
+/* ----------------------------------------------------------------------------- */
+/* Seba */
+.cuadro1{
+    margin-top: 1rem;
+    margin-right: 10rem;
+    width: 200px;
+    height: 300px;
+    color: blanchedalmond;
+}
+#seba{
+    border-bottom-left-radius: 75%;
+    border-bottom-right-radius: 75%;
+    width: 204px;
+    height: 253px;
+    border: 2px solid #00FF00;
+}
+.rect1{
+    border: 2px solid rgb(0, 170, 0);
+    margin-top: 0.5rem;
+}
+
+/* ----------------------------------------------------------------------------- */
+/* Sandy */
+#sandy{
+    border-bottom-left-radius: 75%;
+    border-bottom-right-radius: 75%;
+    border: 4px solid rgb(114, 95, 184);
+    width: 207px;
+    height: 256px;
+}
+.cuadro2{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    margin-right: 10rem;
+    width: 200px;
+    height: 300px;
+    color: blanchedalmond;
+}
+.rect2{
+    border: 2px solid rgb(65, 55, 102);    
+    margin-top: 0.5rem;
+}
+/* ----------------------------------------------------------------------------- */
+/* Rene */
+#rene{ 
+    border-bottom-left-radius: 75%;
+    border-bottom-right-radius: 75%;
+    border: 2px solid black;
+    width: 204px;
+    height: 253px;
+}
+.cuadro3{
+    margin-top: 4rem;
+    width: 200px;
+    height: 300px;
+    color: blanchedalmond;
+}
+.rect3{
+    border: 2px solid black;
+    margin-top: 0.5rem;
+}
+
+/* ----------------------------------------------------------------------------- */
+/* Cony */
+#cony{
+    border-bottom-left-radius: 75%;
+    border-bottom-right-radius: 75%;
+    border: 2px solid black;
+    width: 204px;
+    height: 253px;   
+}
+.cuadro4{
+    width: 200px;
+    height: 300px;
+    color: blanchedalmond;
+    margin-right: 10rem;
+}
+.rect4{
+    border: 2px solid black;
+}
+
+/* -----------------------------------------------------------------------------
+/* Rhada */
+/* #rhada{
+    border-radius: 100%;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+}
+.cuadro5{
+    margin-right: 10rem;
+    margin-bottom: 3rem;
+    width: 200px;
+    height: 300px;
+    color: blanchedalmond;
+}
+.rect5{
+    border: 1px solid black;
+} */
+
+/* ----------------------------------------------------------------------------- */
+/* Evelyn */
+/* #evelyn{
+    border-radius: 100%;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+}
+.cuadro6{
+    width: 200px;
+    height: 300px;
+    color: blanchedalmond;
+}
+.rect6{
+    border: 1px solid black;
+} */ 
+
+/* ----------------------------------------------------------------------------- */
+/* Jorge */
+#jorge{
+    border-bottom-left-radius: 75%;
+    border-bottom-right-radius: 75%;
+    border: 2px solid orange;
+    width: 204px;
+    height: 253px;
+}
+.cuadro7{
+    width: 200px;
+    height: 300px;
+    color: blanchedalmond;
+    margin-right: 5rem;
+}
+.rect7{
+    border: 2px solid rgb(255, 133, 46);
+    margin-top: 0.5rem;
+}
+/* ----------------------------------------------------------------------------- */
+/* Camila */
+#camila{
+    border-bottom-left-radius: 75%;
+    border-bottom-right-radius: 75%;
+    border: 2px solid rgb(250, 131, 191);
+    width: 204px;
+    height: 253px;
+}
+.cuadro8{
+    width: 200px;
+    height: 300px;
+    color: blanchedalmond;
+    margin-left: 5rem;
+}
+.rect8{
+    border: 2px solid rgb(248, 63, 156);
+}
+/* ----------------------------------------------------------------------------- */
+
+/* footer */
+.footer{
+    float: initial;
+    background-color: black;
+}
+.footer_top{
+    border-top: 1px solid black;
+}
+#footer-1{
+    color: white;
+}
+#footer-container{
+    color: white
+}
