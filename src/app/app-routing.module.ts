@@ -18,6 +18,7 @@ import { UserHistorialComponent } from "./components/user-historial/user-histori
 import { QuienesSomosComponent } from "./components/quienes-somos/quienes-somos.component";
 import { PreguntasFrecuentesComponent } from './components/preguntas-frecuentes/preguntas-frecuentes.component';
 import { TablaUserComponent } from './components/tabla-user/tabla-user.component';
+import { TablaEjecutivoComponent } from './components/tabla-ejecutivo/tabla-ejecutivo.component';
 
 const routes: Routes = [
   {path: "login", component:LoginComponent},
@@ -33,6 +34,7 @@ const routes: Routes = [
   {path: "sobreNosotros", component:QuienesSomosComponent},
   {path: "preguntasFrecuentes", component:PreguntasFrecuentesComponent},
   {path: "user/table", component:TablaUserComponent},
+  {path: "ejecutivo/table", component:TablaEjecutivoComponent},
   {path: "**", component:HomeComponent}
 ];  
 
