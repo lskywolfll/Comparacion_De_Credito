@@ -32,6 +32,7 @@ import { UserHistorialComponent } from './components/user-historial/user-histori
 import { TablaUserComponent } from './components/tabla-user/tabla-user.component';
 import { TablaEjecutivoComponent } from './components/tabla-ejecutivo/tabla-ejecutivo.component';
 import { TablaAdminComponent } from './components/tabla-admin/tabla-admin.component';
+import { QuienesSomosUserComponent } from './components/quienes-somos-user/quienes-somos-user.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +62,8 @@ import { TablaAdminComponent } from './components/tabla-admin/tabla-admin.compon
     UserHistorialComponent,
     TablaUserComponent,
     TablaEjecutivoComponent,
-    TablaAdminComponent
+    TablaAdminComponent,
+    QuienesSomosUserComponent
   ],
   imports: [
     BrowserModule,
