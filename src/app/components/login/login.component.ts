@@ -22,37 +22,6 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
 
-  // login(correo:string,password:string, event:Event){
-  //   event.preventDefault();
-  //   // validaciones de campos 
-
-  //   if(password != null && correo != null){
-  //     // invoco al servicio para conectar con servidor java
-  //      this.service.login(correo,password).subscribe(data =>{
-  //       console.log(data)
-  //       // let u:User = data.user;
-  //       // this.service.setUserLogedIn(u);
-  //     }, err =>{
-  //       Swal.fire({
-  //         type: 'error',
-  //         title: 'Oops...',
-  //         text: 'Tus datos no son validos y/o no existen!',
-  //         // footer: '<a href>Por que ocurre esto?</a>'
-  //       })
-  //       console.log(err)
-  //     },() => this.navigate()
-  //     ); 
-  //   }
-  //   else{
-  //     Swal.fire({
-  //       type: 'error',
-  //       title: 'Oops...',
-  //       text: 'No se ha ingresado correctamente los datos!',
-  //       // footer: '<a href>Por que ocurre esto?</a>'
-  //     })
-  //   }
-  // }
-
   navigate(){
     this.router.navigateByUrl('/login/home');
   }

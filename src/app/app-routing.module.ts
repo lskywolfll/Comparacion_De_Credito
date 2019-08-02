@@ -28,7 +28,7 @@ const routes: Routes = [
   {path: "login", component:LoginComponent},
   {path: "login/Administracion", component:AdministracionComponent},
   {path: "user/informaciones", component:InfoUserComponent},
-  {path: "createCredit", component:CreateBankComponent},
+  {path: "admin/createCredit", component:CreateBankComponent},
   {path: "register", component:RegistrarseComponent},
   {path: "password", component:PasswordComponent},
   {path: "user/home", component:HomeUserComponent },
