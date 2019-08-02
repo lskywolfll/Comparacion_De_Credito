@@ -8,9 +8,7 @@ export class AdministracionService {
 
   constructor( private http: HttpClient) { }
 
-  administracionPost( email:string, pass:string){
-
-    return this.http.post( 'localhost:8080', {email:email, pass:pass});
+  loginAdmin(nombre:string,password:string){
     
-  };
+  }
 }

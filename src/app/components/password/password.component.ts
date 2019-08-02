@@ -68,13 +68,13 @@ export class PasswordComponent implements OnInit {
 
   eliminar(rut:string){
     Swal.fire({
-      title: 'Are you sure?',
-      text: "You won't be able to revert this!",
+      title: 'Estas seguro?',
+      text: "Tu no podras Revertir esto!",
       type: 'warning',
       showCancelButton: true,
       confirmButtonColor: '#3085d6',
       cancelButtonColor: '#d33',
-      confirmButtonText: 'Yes, delete it!'
+      confirmButtonText: 'Si, quieres eliminar el usuario!'
     }).then((result) => {
       if (result.value) {
         this.service.deleteUser(rut).subscribe(data =>{
@@ -82,8 +82,8 @@ export class PasswordComponent implements OnInit {
         },err =>{
           console.log(err)  
           Swal.fire(
-            'Deleted!',
-            'Your file has been deleted.',
+            'Eliminado!',
+            'Tu usuario ha sido eliminado.',
             'success'
           )
         })

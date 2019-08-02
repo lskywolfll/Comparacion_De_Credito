@@ -6,16 +6,16 @@ import { User } from '../Modelo/User';
   providedIn: 'root'
 })
 export class UsersService {
-  private userLogedIn;
+  private isUserLoggedIn;
   private userLogged:User;
 
   constructor(private http: HttpClient) { 
-    this.userLogedIn = false;
+    this.isUserLoggedIn = false;
   }
 
   //Mantener sesion
   setUserLogedIn(user:User){
-    this.userLogedIn = true;
+    this.isUserLoggedIn = true;
     this.userLogged = user;
     // Palabra clave y valor setItem("clave",valor)
     localStorage.setItem('currentUser', JSON.stringify(user));
@@ -44,8 +44,8 @@ export class UsersService {
     })
   }
 
-  ingresar(correo: string, password: string) {
-    return this.http.post("http://localhost:9090/api/users/login", {
+  login(correo: string, password: string) {
+    return this.http.post(`http://localhost:9090/api/users/login`, {
       correo: correo,
       password: password
     })

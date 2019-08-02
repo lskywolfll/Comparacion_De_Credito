@@ -18,18 +18,6 @@ export class AdministracionComponent implements OnInit {
   ngOnInit() {
   }
 
-  administracion(){
-
-    // validaciones de campos
-    if( this.pass.length > 5 && this.pass.length < 17  ){
-
-    }
-    else{
-      
-    }
-
-    // invoco al servicio para conectar con servidor java
-    this.service.administracionPost( this.email, this.pass );
-  }
+  
   
 }

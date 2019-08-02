@@ -12,21 +12,21 @@ import { User } from 'src/app/Modelo/User';
 
 export class LoginComponent implements OnInit {
 
-  correo:string;
-  password:string;
+  // correo:string;
+  // password:string;
 
   constructor( private service:UsersService,private router:Router) { }
 
   ngOnInit() {
   }
 
-  login(){
-    // event.preventDefault();
+  login(correo:string,password:string, event:Event){
+    event.preventDefault();
     // validaciones de campos 
 
-    if(this.password != null && this.correo != null){
+    if(password != null && correo != null){
       // invoco al servicio para conectar con servidor java
-      this.service.ingresar(this.correo,this.password).subscribe(data =>{
+      this.service.login(correo,password).subscribe(data =>{
         console.log(data)
         // let u:User = this.service.logged(this.correo,this.password);
         // this.service.setUserLogedIn(u);
