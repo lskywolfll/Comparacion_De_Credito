@@ -1,0 +1,80 @@
+/* **********************************NavBar ********************************** */
+
+.navbar{
+    background-color: #539cd3;
+    border-bottom: 1px solid black;
+}
+#logo{
+    border: none;
+}
+a {
+    color: aliceblue;
+}
+.dropdown-menu{
+    border: 2px solid black;
+    top: 85%;
+    right: 0.5rem;
+}
+/***********************************body***********************************/
+
+/*SIMULAR*/
+#cuadroSimular{
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #000;
+    border-radius: 15px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 2px 23px 10px rgb(0, 0, 0);
+    -moz-box-shadow: 0px 2px 23px 10px rgb(0, 0, 0);
+    box-shadow: 0px 2px 23px 10px rgb(0, 0, 0);
+    width: 45rem;
+}
+
+#contenido{
+    width: 200px;
+    margin: left;
+}
+
+#titulo{
+    padding-left: 7rem;
+    text-align: left;
+    width: 200px;
+    margin: right;
+}
+
+.titulo{
+    border: 1px solid #000;
+    background-color:#ffffff;
+    border-radius: 15px;
+    color:red;
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10rem;
+}
+
+/*tarjeta*/
+#cartas{
+    margin-top: 20px;
+    align-content: center;
+    padding-left: 110px;
+    padding-top: 2rem;
+    padding-bottom: 30px;
+}
+
+/* footer */
+.footer{
+    float: initial;
+    background-color: black;
+}
+.footer_top{
+    border-top: 1px solid black;
+}
+#footer-1{
+    color: white;
+}
+#footer-container{
+    color: white
+}

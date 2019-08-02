@@ -1,0 +1,287 @@
+<!--NAVBAR-->
+<nav class="navbar navbar-expand-lg navbar-dark-gradient fixed-top">
+        <nav class="navbar navbar-light " id="logo">
+            <a class="navbar-brand" href="#">
+            <!-- Imagen -->
+            <img src="https://i.imgur.com/LwYbkvC.png" width="70" height="70"> 
+            CCO Corporation®            
+            </a>
+        </nav> 
+            
+        <!-- NavBar - Menu --> 
+        <div class="navbar-menu">
+            <div class="navbar-center">
+                <ul class="navbar-nav navbar-center" id="nav_menu">
+                    <li class="nav-menu"><a class="nav-link navbar-brand " href="#">Comparar Créditos</a></li>
+                    <li class="nav-menu"><a class="nav-link navbar-brand" href="#">Preguntas Frecuentes</a></li>
+                    <li class="nav-menu"><a class="nav-link active navbar-brand" href="#">Sobre Nosotros</a> </li>              
+                </ul>
+            </div>
+        </div>
+            
+        <!-- Navbar - Derecha -->
+        <div class="navbar-collapse">
+                <div class="navbar-nav ml-auto">
+    
+                    <button type="button" class="btn btn-outline-light nav-link dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <img src="https://imgur.com/PSrY98T.png" class="media-object"
+                            style="width:60px; border-radius: 100%">
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="btnDrop1" id="drop-menu">
+                        <a class="dropdown-item ml-auto" style="color: black" href="#">Cerrar Sesión</a>
+                    </div>
+    
+                </div>
+            </div>
+    </nav>
+    <!--FIN DE NAVBAR-->
+    
+    <!-- ------------------------------------------------------------ -->
+    
+    <!--SIMULAR-->
+    <div class="simular">
+        <!-- Formulario -->
+        <form id="cuadroSimular">
+            <h1>Simula tu credito</h1>
+            
+            <br>
+            
+            
+            
+            <!--segunda linea-->
+            <div class="form-row">
+                <div class="form-group col-md-6" id="titulo">
+                    <label for="input">Quiero un credito de cosumo de </label>
+                </div>
+                
+                <div class="form-group col-md-6" id="contenido">
+                    <input type="text" [(ngModel)]="rut" oninput="this.value=this.value.replace(/[^0-9]/g,'');"class="form-control" id="contenido" placeholder="$    xxx.xxx.xxx" minlength="5" maxlength="9">
+                </div>
+            </div>
+            
+            <!--tercera linea-->
+            <div class="form-row">
+                <div class="form-group col-md-6" id="titulo">
+                    <label for="input">Con un plazo</label>
+                </div>
+                
+                <div class="form-group col-md-6" id="contenido">
+                    <input type="text" [(ngModel)]="rut" oninput="this.value=this.value.replace(/[^0-9]/g,'');"class="form-control" id="contenido" placeholder="Cuotas mensuales" minlength="1" maxlength="3">
+                </div>
+            </div>
+                    
+        </form>
+        <!-- Fin Formulario -->
+        
+    </div>
+    <!--FIN DE SIMULAR-->
+    
+    <!-- ----------------------------------------------------- -->
+    
+    
+    <!--TITULO DE TARJETAS-->
+    <div>
+        <h1 class="titulo">Bancos</h1>
+    </div>
+    <!--FIN DEL TITULO DE LAS TARJETAS-->
+    
+    <!--TARJETA-->
+    <div class="tarjetas">
+        
+        
+        <div class="form-row">
+            <!--CARD1-->    
+            <div class="form-group col-md-4" id="cartas">
+                <!-- Tamaño Card -->
+                <div class="card" style="width: 15rem; margin-top: 3rem;">
+                    <!-- Imagen -->
+                    <img src="https://www.bancoestado.cl/imagenes/_img/logo-banco-estado_fb.png" class="card-img-top" alt="logo de Banco Estado">
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">Banco Estado</h5>
+                        <p>Credito de consumo</p>
+                    </div>
+                    
+                    <ul class="list-group list-group-flush">
+                        <small><li class="list-group-item">Valor de cuota $98.109</li></small>
+                        <small><li class="list-group-item">Taza de interes  2,41%</li></small>
+                        <small><li class="list-group-item">Numero de cuotas    12</li></small>
+                        <small><li class="list-group-item">Costo total $1.177.308</li></small>
+                    </ul>
+                    
+                    <div class="card-body">
+                        <div class="btn-group" role="group" id="botonDesplegable">
+                            <!-- Botón -->
+                            <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Simula tu credito</button>
+                            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                
+                                <p class="dropdown-item" href="#">AGREGAR LA INFORMACION</p>
+                                ******************************************<br>
+                                ******************************************<br>
+                                ******************************************<br>
+                                ******************************************<br>
+                            
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+            <!-- FIN CARD1 -->
+    
+        <!-- --------------------------------------------------------------- -->
+    
+            <!--CARD2-->
+            <div class="form-group col-md-4"id="cartas">
+                <!-- Tamaño Card -->
+                <div class="card" style="width: 15rem; margin-top: 3rem;">
+                    <!-- Imagen -->
+                    <img src="https://yt3.ggpht.com/a-/AAuE7mCc9wIT0Us16JpYRMX2uGpbeQl9G5VAz7ezkg=s900-mo-c-c0xffffffff-rj-k-no" class="card-img-top" alt="logo de Banco Ripley" >
+                        
+                        <div class="card-body">
+                            <h5 class="card-title">Banco Ripley</h5>
+                            <p>Credito de consumo</p>
+                        </div>
+    
+                    <ul class="list-group list-group-flush">
+                        <small><li class="list-group-item">Valor de cuota $101.013</li></small>
+                        <small><li class="list-group-item">Taza de interes   2,89%</li></small>
+                        <small><li class="list-group-item">Numero de cuotas     12</li></small>
+                        <small><li class="list-group-item">Costo total  $1.212.156</li></small>
+                    </ul>
+                    
+                    <div class="card-body">
+                        <div class="btn-group" role="group" id="botonDesplegable">
+                            <!-- Botón -->
+                            <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Simula tu credito</button>
+                            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                        
+                                <p class="dropdown-item" href="#">AGREGAR LA INFORMACION</p>
+                                ******************************************<br>
+                                ******************************************<br>
+                                ******************************************<br>
+                                ******************************************<br>
+                            
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+            <!-- FIN CARD2 -->
+    
+            <!-- --------------------------------------------------- -->
+    
+            <!--CARD3-->
+            <div class="form-group col-md-4" id="cartas">
+                <!-- Tamaño Card -->
+                <div class="card" style="width: 15rem; margin-top: 3rem;">
+                    <!-- Imagen -->
+                    <img src="http://www.logam.cl/wp-content/uploads/2015/11/banco-bice.png" class="card-img-top" alt="logo Banco Bice">
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">Banco Bice</h5>
+                        <p>Credito de consumo</p>
+                    </div>
+                    
+                    <ul class="list-group list-group-flush">
+                        <small><li class="list-group-item">Valor de cuota $89.253</li></small>
+                        <small><li class="list-group-item">Taza de interes  0,92%</li></small>
+                        <small><li class="list-group-item">Numero de cuotas    12</li></small>
+                        <small><li class="list-group-item">Costo total $1.071.036</li></small>
+                    </ul>
+                    
+                    <div class="card-body">
+                        <div class="btn-group" role="group" id="botonDesplegable">
+                            <!-- Botón -->
+                            <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Simula tu credito</button>
+                            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                
+                                <p class="dropdown-item" href="#">AGREGAR LA INFORMACION</p>
+                                ******************************************<br>
+                                ******************************************<br>
+                                ******************************************<br>
+                                ******************************************<br>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- FIN CARD3 -->
+    
+        </div>
+    
+    </div>
+    <!--FIN DE TARJETAS-->
+    
+    
+    <!-- --------------------------------------------------------------- -->
+    
+    
+    <!-- Footer -->
+    <footer class="footer">
+        
+        <div style="background-color: #3a697e;">
+            <div class="container-footer">
+                
+                <div class="row py-3" id="footer-top">
+                    
+                    <div class="col text-center" id="footer-1">
+                        <h5>¡Conéctate con nosotros en las redes sociales!</h5>
+                    </div>                  
+                
+                </div>          
+            </div>
+        </div>
+        
+        <!-- Footer Fondo -->
+        <div class="container text-center text-md-left mt-4" id="footer-container">
+            <div class="row mt-3">
+        
+                <!-- Box Izquierdo -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">        
+                    <!-- Contenido -->
+                    <h6 class="text-uppercase font-weight-bold text-center">CCO</h6>
+                    <h6 class="text-center">Comparación de Créditos</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>"Que tus sueños no sean una meta sino una realidad"</p>
+                </div>  
+        
+                <!-- Box Centro -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Contenido -->
+                    <h6 class="text-uppercase font-weight-bold">Redes Sociales</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p><a href="#!">Facebook</a></p>
+                    <p><a href="#!">Instagram</a></p>
+                    <p><a href="#!">Twitter</a></p>
+                </div>
+        
+                <!-- Box Derecha -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Contenido -->
+                    <h6 class="text-uppercase font-weight-bold text-center">Contacto</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p><i class="fas fa-home mr-3"></i> Santiago, Chile</p>
+                    <p><i class="fas fa-envelope mr-3"></i> corporation.cco@gmail.com</p>
+                    <p><i class="fas fa-print mr-3"></i>
+                    
+                    +569 12345678
+                    
+                    </p>
+                
+                </div> 
+            
+            </div>
+        </div>    
+        
+        <!-- Copyright  -->
+        <div class="footer-copyright text-center py-3" id="copyright">© 2019 Copyright:
+            <a href="#"> CCO Corporation®</a>
+        </div> 
+    
+    </footer>
