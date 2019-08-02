@@ -16,7 +16,7 @@
         <div class="navbar-menu">
             <div class="navbar-center">
 
-                <ul class="navbar-nav navbar-center" id="nav_menu">
+                <ul class="navbar-nav navbar-center">
                     <li class="nav-menu"><a class="nav-link navbar-brand " href="#">Comparar Créditos</a></li>
                     <li class="nav-menu"><a class="nav-link navbar-brand" href="#">Preguntas Frecuentes</a></li>
                     <li class="nav-menu"><a class="nav-link active navbar-brand" href="#">Sobre Nosotros</a> </li>
@@ -29,12 +29,16 @@
         <div class="navbar-collapse">
             <div class="navbar-nav ml-auto">
 
-                <button type="button" class="btn btn-outline-light nav-link" href="">
+                <button type="button" class="btn btn-outline-light nav-link dropdown-toggle" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
                     <img src="https://imgur.com/PSrY98T.png" class="media-object"
                         style="width:60px; border-radius: 100%">
                 </button>
-            </div>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="btnDrop1" id="drop-menu">
+                    <a class="dropdown-item ml-auto" style="color: black" href="#">Cerrar Sesión</a>
+                </div>
 
+            </div>
         </div>
     </nav>
     <!-- ---------------------- FIN NAVBAR ---------------------------- -->
@@ -60,7 +64,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr class="text-center" *ngFor="let user of credits"> 
+                            <tr class="text-center" *ngFor="let user of credits">
                                 <td>{{credit.id}}</td>
                                 <td>{{credit.banco}}</td>
                                 <td>{{credit.monto}}</td>
@@ -70,7 +74,8 @@
                                 <td>{{credit.valor_cuota}}</td>
                                 <td>{{total}}</td>
                                 <td>
-                                    <button type="button" class="btn btn-warning" style="margin-right: 1rem">Editar</button>
+                                    <button type="button" class="btn btn-warning"
+                                        style="margin-right: 1rem">Editar</button>
                                     <button type="button" class="btn btn-danger">Eliminar</button>
                                 </td>
                             </tr>
