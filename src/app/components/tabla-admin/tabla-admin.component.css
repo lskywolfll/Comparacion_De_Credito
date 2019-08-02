@@ -1,0 +1,46 @@
+.overflow{
+    overflow-x: hidden;
+}
+/* ------------------------------------------------------------------------------ */
+
+/* NavBar */
+.navbar{
+    background-color: #539cd3;
+    border-bottom: 1px solid black;
+}
+#logo{
+    border: none;
+}
+a {
+    color: aliceblue;
+}
+
+.dropdown-menu{
+    border: 2px solid black;
+    top: 85%;
+    right: 0.5rem;
+}
+
+/* ----------------------------------------------------------------------------- */
+
+.contenedor-tabla{
+    margin-top: 11rem;
+    margin-bottom: 4rem;
+}
+
+/* ----------------------------------------------------------------------------- */
+
+/* footer */
+.footer{
+    float: initial;
+    background-color: black;
+}
+.footer_top{
+    border-top: 1px solid black;
+}
+#footer-1{
+    color: white;
+}
+#footer-container{
+    color: white
+}

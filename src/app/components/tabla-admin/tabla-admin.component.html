@@ -16,7 +16,7 @@
         <div class="navbar-menu">
             <div class="navbar-center">
 
-                <ul class="navbar-nav navbar-center" id="nav_menu">
+                <ul class="navbar-nav navbar-center">
                     <li class="nav-menu"><a class="nav-link navbar-brand " href="#">Comparar Créditos</a></li>
                     <li class="nav-menu"><a class="nav-link navbar-brand" href="#">Preguntas Frecuentes</a></li>
                     <li class="nav-menu"><a class="nav-link active navbar-brand" href="#">Sobre Nosotros</a> </li>
@@ -37,9 +37,8 @@
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="btnDrop1" id="drop-menu">
                     <a class="dropdown-item ml-auto" style="color: black" href="#">Cerrar Sesión</a>
                 </div>
-                
-            </div>
 
+            </div>
         </div>
     </nav>
     <!-- ---------------------- FIN NAVBAR ---------------------------- -->
@@ -66,16 +65,18 @@
                         </thead>
                         <tbody>
                             <tr class="text-center" *ngFor="let user of credits">
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>{{credit.id}}</td>
+                                <td>{{credit.banco}}</td>
+                                <td>{{credit.monto}}</td>
+                                <td>{{credit.interes}}</td>
+                                <td>{{credit.cae}}</td>
+                                <td>{{credit.cuotas}}</td>
+                                <td>{{credit.valor_cuota}}</td>
+                                <td>{{total}}</td>
                                 <td>
-                                    <button type="button" class="btn btn-warning">Editar</button>
+                                    <button type="button" class="btn btn-warning"
+                                        style="margin-right: 1rem">Editar</button>
+                                    <button type="button" class="btn btn-danger">Eliminar</button>
                                 </td>
                             </tr>
                         </tbody>
