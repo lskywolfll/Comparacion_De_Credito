@@ -31,6 +31,7 @@ import { UsersService } from './services/users.service';
 import { UserHistorialComponent } from './components/user-historial/user-historial.component';
 import { TablaUserComponent } from './components/tabla-user/tabla-user.component';
 import { TablaEjecutivoComponent } from './components/tabla-ejecutivo/tabla-ejecutivo.component';
+import { TablaAdminComponent } from './components/tabla-admin/tabla-admin.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { TablaEjecutivoComponent } from './components/tabla-ejecutivo/tabla-ejec
     HomeEjecutivoComponent,
     UserHistorialComponent,
     TablaUserComponent,
-    TablaEjecutivoComponent
+    TablaEjecutivoComponent,
+    TablaAdminComponent
   ],
   imports: [
     BrowserModule,
