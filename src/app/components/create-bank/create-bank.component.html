@@ -58,8 +58,7 @@
                             <label>
                                 <h4>Nombre del Banco</h4>
                             </label>
-                            <input [(ngModel)]="nombre" name="nombre" type="text" class="form-control" id="nombre_banco"
-                                placeholder="CCO Corporation®">
+                            <input [(ngModel)]="nombre" name="nombre" type="text" class="form-control" id="nombre_banco" title="Añade el nombre del banco">
                         </div>
 
                         <hr style="border-top-color:  aqua">
@@ -70,7 +69,7 @@
                             </label>
                             <div class="input-group">
                                 <input type="number" [(ngModel)]="costototal" name="costototal" class="form-control"
-                                    id="nombre_banco">
+                                    id="nombre_banco" title="Monto máximo a pedir disponible en el banco">
                             </div>
                         </div>
 
@@ -81,7 +80,7 @@
                                 <h4>Tasa de Interes</h4>
                             </label>
                             <div class="input-group">
-                                <input type="number" [(ngModel)]="tasa" name="tasa" class="from-control" id="tasa">
+                                <input type="number" [(ngModel)]="tasa" name="tasa" class="from-control" id="tasa" title="Es un porcentaje que se traduce en un monto de dinero, mediante el cual se paga por el uso del dinero.">
                                 <div class="input-group-prepend"></div>
                             </div>
                         </div>
@@ -93,7 +92,7 @@
                                 <h4>CAE</h4>
                             </label>
                             <div class="input-group">
-                                <input type="number" [(ngModel)]="cae" name="cae" class="from-control" id="tasa">
+                                <input type="number" [(ngModel)]="cae" name="cae" class="from-control" id="tasa" title="Es la Carga Anual Equivalente.">
                                 <div class="input-group-prepend"></div>
                             </div>
                         </div>
@@ -104,6 +103,7 @@
 
             </div>
             <!-- FIN CONTENEDOR IZQUIERDO -->
+            
         </div>
 
         <!-- ------------------------------------------------------------------------------------ -->
@@ -113,15 +113,16 @@
             <div class="card" id="card">
 
                 <div class="contenedor-img">
-                    <img src="https://i.imgur.com/LwYbkvC.png" class="card-img-top" id="img-card" alt="img">
+
+                    <img [src]="imgURL" height="210" width="334" *ngIf="imgURL">
+                    
                 </div>
 
                 <div class="input-group xs" style="padding: 1rem">
-                    <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="inputFile">
-                        <label class="custom-file-label" for="inputGroupFile" aria-describedby="inputFileAdd">Elegir
-                            Archivo</label>
-                    </div>
+                    
+                    <span style="color:red;" *ngIf="message">{{message}}</span>
+                    <input #file type="file" accept='image/*' (change)="preview(file.files)" />
+
                 </div>
 
                 <div class="card-body">
@@ -146,71 +147,76 @@
 
             </div>
         </form>
-    <!-- FIN Contenedor del Card -->
-</div>
+        <!-- FIN Contenedor del Card -->
 
-<!-- ------------------------------------------------------------------------------------------- -->
+        <div class="form-group">
+            <div class="container" id="derecha"></div>
+        </div>
 
-<!-- Footer -->
-<footer class="footer">
-    <div style="background-color: #3a697e;">
-        <div class="container-footer">
-            <div class="row py-3" id="footer-top">
-                <div class="col text-center" id="footer-1">
-                    <h5>¡Conéctate con nosotros en las redes sociales!</h5>
+    </div>
+
+    <!-- ------------------------------------------------------------------------------------------- -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div style="background-color: #3a697e;">
+            <div class="container-footer">
+                <div class="row py-3" id="footer-top">
+                    <div class="col text-center" id="footer-1">
+                        <h5>¡Conéctate con nosotros en las redes sociales!</h5>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Footer Fondo -->
-    <div class="container text-center text-md-left mt-4" id="footer-container">
-        <div class="row mt-3">
+        <!-- Footer Fondo -->
+        <div class="container text-center text-md-left mt-4" id="footer-container">
+            <div class="row mt-3">
 
-            <!-- Box Izquierdo -->
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                <!-- Contenido -->
-                <h6 class="text-uppercase font-weight-bold text-center">CCO</h6>
-                <h6 class="text-center">Comparación de Créditos</h6>
-                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                <p>"Que tus sueños no sean una meta sino una realidad"</p>
+                <!-- Box Izquierdo -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Contenido -->
+                    <h6 class="text-uppercase font-weight-bold text-center">CCO</h6>
+                    <h6 class="text-center">Comparación de Créditos</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>"Que tus sueños no sean una meta sino una realidad"</p>
+                </div>
+                <!-- FIN BOX IZQUIERDO -->
+
+                <!-- Box Centro -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Contenido -->
+                    <h6 class="text-uppercase font-weight-bold">Redes Sociales</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p><a href="#!">Facebook</a></p>
+                    <p><a href="#!">Instagram</a></p>
+                    <p><a href="#!">Twitter</a></p>
+                </div>
+                <!-- FIN BOX CENTRO -->
+
+                <!-- Box Derecha -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Contenido -->
+                    <h6 class="text-uppercase font-weight-bold text-center">Contacto</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p><i class="fas fa-home mr-3"></i> Santiago, Chile</p>
+                    <p><i class="fas fa-envelope mr-3"></i> corporation.cco@gmail.com</p>
+                    <p><i class="fas fa-print mr-3"></i>
+                        +569 12345678
+                    </p>
+                </div>
+                <!-- FIN BOX DERECHA -->
+
             </div>
-            <!-- FIN BOX IZQUIERDO -->
-
-            <!-- Box Centro -->
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                <!-- Contenido -->
-                <h6 class="text-uppercase font-weight-bold">Redes Sociales</h6>
-                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                <p><a href="#!">Facebook</a></p>
-                <p><a href="#!">Instagram</a></p>
-                <p><a href="#!">Twitter</a></p>
-            </div>
-            <!-- FIN BOX CENTRO -->
-
-            <!-- Box Derecha -->
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                <!-- Contenido -->
-                <h6 class="text-uppercase font-weight-bold text-center">Contacto</h6>
-                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                <p><i class="fas fa-home mr-3"></i> Santiago, Chile</p>
-                <p><i class="fas fa-envelope mr-3"></i> corporation.cco@gmail.com</p>
-                <p><i class="fas fa-print mr-3"></i>
-                    +569 12345678
-                </p>
-            </div>
-            <!-- FIN BOX DERECHA -->
 
         </div>
 
-    </div>
+        <!-- Copyright  -->
+        <div class="footer-copyright text-center py-3" id="copyright">© 2019 Copyright:
+            <a href="#"> CCO Corporation®</a>
+        </div>
 
-    <!-- Copyright  -->
-    <div class="footer-copyright text-center py-3" id="copyright">© 2019 Copyright:
-        <a href="#"> CCO Corporation®</a>
-    </div>
-
-</footer>
-<!-- FIN FOOTER -->
+    </footer>
+    <!-- FIN FOOTER -->
 </div>
 <!-- FIN OVERFLOW -->

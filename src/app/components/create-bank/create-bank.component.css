@@ -64,6 +64,7 @@ a {
     border: 1px solid slateblue;
 }
 
+
 /* -------------------------------------------- */
 
 #contenedor-card{
@@ -92,8 +93,6 @@ a {
 /* Imagen Card */
 .contenedor-img{
     border: 2px solid black;
-    width: 334px;
-    height: 210px;
     background-color: beige;
     padding: 5px;
     margin-left: 1rem;
@@ -102,6 +101,14 @@ a {
     width: 280px; 
     height: 200px;  
     margin-left: 0.5rem
+}
+/* ------------------------------------------------ */
+#derecha{
+    height: 65rem;
+    width: 20rem;
+    border: 1px solid black;
+    border-bottom-color: transparent;
+    background-color: teal;
 }
 
 /* ------------------------------------------------ */
