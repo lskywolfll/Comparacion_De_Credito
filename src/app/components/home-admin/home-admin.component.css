@@ -9,7 +9,11 @@
 a {
     color: aliceblue;
 }
-
+.dropdown-menu{
+    border: 2px solid black;
+    top: 85%;
+    right: 0.5rem;
+}
 /* -------------------------------------------------- */
 
 /* Perfil Button */

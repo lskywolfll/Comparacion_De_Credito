@@ -35,6 +35,7 @@ import { TablaAdminComponent } from './components/tabla-admin/tabla-admin.compon
 import { QuienesSomosUserComponent } from './components/quienes-somos-user/quienes-somos-user.component';
 import { UserCompararCreditoComponent } from './components/user-comparar-credito/user-comparar-credito.component';
 import { EjecutivoCompararCreditoComponent } from './components/ejecutivo-comparar-credito/ejecutivo-comparar-credito.component';
+import { UserPreguntasFrecuentesComponent } from './components/user-preguntas-frecuentes/user-preguntas-frecuentes.component';
 
 @NgModule({
   declarations: [
@@ -67,7 +68,8 @@ import { EjecutivoCompararCreditoComponent } from './components/ejecutivo-compar
     TablaAdminComponent,
     QuienesSomosUserComponent,
     UserCompararCreditoComponent,
-    EjecutivoCompararCreditoComponent
+    EjecutivoCompararCreditoComponent,
+    UserPreguntasFrecuentesComponent
   ],
   imports: [
     BrowserModule,

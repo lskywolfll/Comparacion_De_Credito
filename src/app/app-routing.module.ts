@@ -23,6 +23,7 @@ import { TablaAdminComponent } from './components/tabla-admin/tabla-admin.compon
 import { QuienesSomosUserComponent } from './components/quienes-somos-user/quienes-somos-user.component';
 import { UserCompararCreditoComponent } from './components/user-comparar-credito/user-comparar-credito.component';
 import { EjecutivoCompararCreditoComponent } from './components/ejecutivo-comparar-credito/ejecutivo-comparar-credito.component';
+import { UserPreguntasFrecuentesComponent } from './components/user-preguntas-frecuentes/user-preguntas-frecuentes.component';
 
 const routes: Routes = [
   {path: "login", component:LoginComponent},
@@ -43,6 +44,9 @@ const routes: Routes = [
   {path: "user/sobreNosotros", component:QuienesSomosUserComponent},
   {path: "user/compararCredito", component:UserCompararCreditoComponent},
   {path: "ejecutivo/compararCredito", component:EjecutivoCompararCreditoComponent},
+  {path: "user/preguntasFrecuentes", component:UserPreguntasFrecuentesComponent},
+  {path: "ejecutivo/home", component:HomeEjecutivoComponent},
+  {path: "admin/home", component:HomeAdminComponent},
   {path: "**", component:HomeComponent}
 ];  
 
