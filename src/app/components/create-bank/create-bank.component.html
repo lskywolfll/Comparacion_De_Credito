@@ -58,8 +58,8 @@
                             <label>
                                 <h4>Nombre del Banco</h4>
                             </label>
-                            <input [(ngModel)]="nombre" name="nombre" type="text" class="form-control" id="nombre_banco"
-                                title="Añade el nombre del banco">
+                            <input name="banco" type="text" class="form-control" id="nombre_banco"
+                                title="Añade el nombre del banco" ngModel>
                         </div>
 
                         <hr style="border-top-color:  aqua">
@@ -69,8 +69,8 @@
                                 <h4>Monto Máximo</h4>
                             </label>
                             <div class="input-group">
-                                <input type="number" [(ngModel)]="costototal" name="costototal" class="form-control"
-                                    id="nombre_banco" title="Monto máximo a pedir disponible en el banco">
+                                <input type="number" name="monto" class="form-control"
+                                    id="nombre_banco" title="Monto máximo a pedir disponible en el banco" ngModel>
                             </div>
                         </div>
 
@@ -81,8 +81,8 @@
                                 <h4>Tasa de Interes</h4>
                             </label>
                             <div class="input-group">
-                                <input type="number" [(ngModel)]="tasa" name="tasa" class="from-control" id="tasa"
-                                    title="Es un porcentaje que se traduce en un monto de dinero, mediante el cual se paga por el uso del dinero.">
+                                <input type="number" name="intereses" class="from-control" id="tasa"
+                                    title="Es un porcentaje que se traduce en un monto de dinero, mediante el cual se paga por el uso del dinero." ngModel>
                                 <div class="input-group-prepend"></div>
                             </div>
                         </div>
@@ -94,8 +94,8 @@
                                 <h4>CAE</h4>
                             </label>
                             <div class="input-group">
-                                <input type="number" [(ngModel)]="cae" name="cae" class="from-control" id="tasa"
-                                    title="Es la Carga Anual Equivalente.">
+                                <input type="number" name="cae" class="from-control" id="tasa"
+                                    title="Es la Carga Anual Equivalente." ngModel>
                                 <div class="input-group-prepend"></div>
                             </div>
                         </div>
