@@ -15,6 +15,12 @@ export class CreateBankComponent implements OnInit {
   ngOnInit() {
   }
 
+  banco:string;
+  monto:number;
+  intereses:number;
+  cae:number;
+  cuotas:number;
+
   credit:Credit;
 
   crearCredit(credit){

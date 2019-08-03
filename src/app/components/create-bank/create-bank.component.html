@@ -50,12 +50,12 @@
                 <div class="contenedor" id="izquierda-form">
 
                     <!-- Formulario -->
-                    <form id="formulario" #dataCredit="ngForm" (ngSubmit)="create(dataCredit.value)">
+                    <form id="formulario" #dataCredit="ngForm" (ngSubmit)="crearCredit(dataCredit.value)">
                         <div class="form-group">
                             <label>
                                 <h4>Nombre del Banco</h4>
                             </label>
-                            <input name="banco" type="text" class="form-control" id="nombre_banco"
+                            <input [(ngModel)]="banco" name="banco" type="text" class="form-control" id="nombre_banco"
                                 title="Añade el nombre del banco" ngModel>
                         </div>
 
@@ -66,8 +66,21 @@
                                 <h4>Monto Máximo</h4>
                             </label>
                             <div class="input-group">
-                                <input type="number" name="monto" class="form-control"
+                                <input type="number" [(ngModel)]="monto" name="monto" class="form-control"
                                     id="nombre_banco" title="Monto máximo a pedir disponible en el banco" ngModel>
+                            </div>
+                        </div>
+
+                        <hr style="border-top-color:  aqua">
+
+                        <div class="form-group">
+                            <label>
+                                <h4>Cuotas</h4>
+                            </label>
+                            <div class="input-group">
+                                <input type="number" [(ngModel)]="cuotas" name="cuotas" class="from-control" id="tasa"
+                                    title="Aqui se ingresa el maximo de cuotas correspondiente." ngModel>
+                                <div class="input-group-prepend"></div>
                             </div>
                         </div>
 
@@ -78,7 +91,7 @@
                                 <h4>Tasa de Interes</h4>
                             </label>
                             <div class="input-group">
-                                <input type="number" name="intereses" class="from-control" id="tasa"
+                                <input type="number" [(ngModel)]="intereses" name="intereses" class="from-control" id="tasa"
                                     title="Es un porcentaje que se traduce en un monto de dinero, mediante el cual se paga por el uso del dinero." ngModel>
                                 <div class="input-group-prepend"></div>
                             </div>
@@ -91,7 +104,7 @@
                                 <h4>CAE</h4>
                             </label>
                             <div class="input-group">
-                                <input type="number" name="cae" class="from-control" id="tasa"
+                                <input type="number" [(ngModel)]="cae" name="cae" class="from-control" id="tasa"
                                     title="Es la Carga Anual Equivalente." ngModel>
                                 <div class="input-group-prepend"></div>
                             </div>
@@ -130,15 +143,18 @@
                 </div>
 
                 <div class="card-body">
-                    <h5 class="card-title"> {{ nombre }} </h5>
+                    <h5 class="card-title"> {{banco}} </h5>
                 </div>
 
                 <ul class="list-group list-group-flush">
                     <div class="input-group">
-                        <li class="list-group-item" style="width: 90%;margin-left: 1rem"> {{costototal}} </li>
+                        <li class="list-group-item" style="width: 90%;margin-left: 1rem"> {{monto}} </li>
                     </div>
                     <div class="input-group">
-                        <li class="list-group-item" style="width: 90%;margin-left: 1rem"> {{tasa}} </li>
+                        <li class="list-group-item" style="width: 90%;margin-left: 1rem"> {{cuotas}} </li>
+                    </div>
+                    <div class="input-group">
+                        <li class="list-group-item" style="width: 90%;margin-left: 1rem"> {{intereses}} </li>
                     </div>
                     <div class="input-group">
                         <li class="list-group-item" style="width: 90%;margin-left: 1rem"> {{cae}} </li>
