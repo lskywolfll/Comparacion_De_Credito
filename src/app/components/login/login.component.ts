@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
   }
 
   navigate(){
-    this.router.navigateByUrl('/login/home');
+    this.router.navigateByUrl('/user/home');
   }
 
   enviarDatos(user){
@@ -54,6 +54,8 @@ export class LoginComponent implements OnInit {
             showConfirmButton: false,
             timer: 3000
           })
+        },() =>{
+          this.navigate();
         })
       } catch (e) {
         console.log(e);
