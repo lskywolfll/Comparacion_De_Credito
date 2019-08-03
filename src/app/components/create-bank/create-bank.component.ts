@@ -42,7 +42,7 @@ export class CreateBankComponent implements OnInit {
  
     var mimeType = files[0].type;
     if (mimeType.match(/image\/*/) == null) {
-      this.message = "Only images are supported.";
+      this.message = "Solo se admiten imágenes.";
       return;
     }
  
