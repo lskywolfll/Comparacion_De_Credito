@@ -53,12 +53,13 @@
                 <div class="contenedor" id="izquierda-form">
 
                     <!-- Formulario -->
-                    <form id="formulario">
+                    <form id="formulario" #dataCredit="ngForm" (ngSubmit)="create(dataCredit.value)">
                         <div class="form-group">
                             <label>
                                 <h4>Nombre del Banco</h4>
                             </label>
-                            <input [(ngModel)]="nombre" name="nombre" type="text" class="form-control" id="nombre_banco" title="Añade el nombre del banco">
+                            <input [(ngModel)]="nombre" name="nombre" type="text" class="form-control" id="nombre_banco"
+                                title="Añade el nombre del banco">
                         </div>
 
                         <hr style="border-top-color:  aqua">
@@ -80,7 +81,8 @@
                                 <h4>Tasa de Interes</h4>
                             </label>
                             <div class="input-group">
-                                <input type="number" [(ngModel)]="tasa" name="tasa" class="from-control" id="tasa" title="Es un porcentaje que se traduce en un monto de dinero, mediante el cual se paga por el uso del dinero.">
+                                <input type="number" [(ngModel)]="tasa" name="tasa" class="from-control" id="tasa"
+                                    title="Es un porcentaje que se traduce en un monto de dinero, mediante el cual se paga por el uso del dinero.">
                                 <div class="input-group-prepend"></div>
                             </div>
                         </div>
@@ -92,9 +94,14 @@
                                 <h4>CAE</h4>
                             </label>
                             <div class="input-group">
-                                <input type="number" [(ngModel)]="cae" name="cae" class="from-control" id="tasa" title="Es la Carga Anual Equivalente.">
+                                <input type="number" [(ngModel)]="cae" name="cae" class="from-control" id="tasa"
+                                    title="Es la Carga Anual Equivalente.">
                                 <div class="input-group-prepend"></div>
                             </div>
+                        </div>
+
+                        <div class="card-body">
+                            <button type="submit" class="btn-primary btn-block btn-lg">Añadir</button>
                         </div>
 
                     </form>
@@ -103,23 +110,23 @@
 
             </div>
             <!-- FIN CONTENEDOR IZQUIERDO -->
-            
+
         </div>
 
         <!-- ------------------------------------------------------------------------------------ -->
 
         <!-- Contenedor del Card -->
-        <form class="form-group" id="contenedor-card" #dataCredit="ngForm" (ngSubmit)="create(dataCredit.value)">
+        <form class="form-group" id="contenedor-card">
             <div class="card" id="card">
 
                 <div class="contenedor-img">
 
                     <img [src]="imgURL" height="210" width="334" *ngIf="imgURL">
-                    
+
                 </div>
 
                 <div class="input-group xs" style="padding: 1rem">
-                    
+
                     <span style="color:red;" *ngIf="message">{{message}}</span>
                     <input #file type="file" accept='image/*' (change)="preview(file.files)" />
 
@@ -141,9 +148,7 @@
                     </div>
                 </ul>
 
-                <div class="card-body">
-                    <button type="submit" class="btn-primary btn-block btn-lg">Añadir</button>
-                </div>
+
 
             </div>
         </form>
