@@ -12,42 +12,42 @@ export class CreditService {
   // http://localhost:9090/api/creditos/
 
   create(credit:Credit){
-    this.http.post('http://localhost:9090/api/creditos/create',credit);
+    return this.http.post('http://localhost:9090/api/creditos/create',credit);
   }
 
   delete(id:number){
-    this.http.delete(`http://localhost:9090/api/creditos/${id}`);
+    return this.http.delete(`http://localhost:9090/api/creditos/${id}`);
   }
 
   edit(id:number,credit:Credit){
-    this.http.put(`http://localhost:9090/api/creditos/edit/${id}`, credit);
+    return this.http.put(`http://localhost:9090/api/creditos/edit/${id}`, credit);
   }
 
   getListAll(){
-    this.http.get<Credit[]>('http://localhost:9090/api/creditos/lista');
+    return this.http.get<Credit[]>('http://localhost:9090/api/creditos/lista');
   }
 
   getListByMontoAndCuotas(monto:number,cuotas:number){
-    this.http.get<Credit[]>(`http://localhost:9090/api/creditos/especific/${monto}/${cuotas}`);
+    return this.http.get<Credit[]>(`http://localhost:9090/api/creditos/especific/${monto}/${cuotas}`);
   }
 
   getListByMonto(monto:number){
-    this.http.get<Credit[]>(`http://localhost:9090/api/creditos/list/${monto}`);
+    return this.http.get<Credit[]>(`http://localhost:9090/api/creditos/list/${monto}`);
   }
 
   getListIntereses(intereses:number){
-    this.http.get<Credit[]>(`http://localhost:9090/api/creditos/list/${intereses}`);
+    return this.http.get<Credit[]>(`http://localhost:9090/api/creditos/list/${intereses}`);
   }
 
   getListCuotas(cuotas:number){
-    this.http.get<Credit[]>(`http://localhost:9090/api/creditos/list/${cuotas}`);
+    return this.http.get<Credit[]>(`http://localhost:9090/api/creditos/list/${cuotas}`);
   }
 
   getListBanco(banco:string){
-    this.http.get<Credit[]>(`http://localhost:9090/api/creditos/list/${banco}`);
+    return this.http.get<Credit[]>(`http://localhost:9090/api/creditos/list/${banco}`);
   }
 
   deleteAll(){
-    this.http.delete('http://localhost:9090/api/creditos/delete/all');
+    return this.http.delete('http://localhost:9090/api/creditos/delete/all');
   }
 }
