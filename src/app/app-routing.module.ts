@@ -20,15 +20,18 @@ import { PreguntasFrecuentesComponent } from './components/preguntas-frecuentes/
 import { TablaUserComponent } from './components/tabla-user/tabla-user.component';
 import { TablaEjecutivoComponent } from './components/tabla-ejecutivo/tabla-ejecutivo.component';
 import { TablaAdminComponent } from './components/tabla-admin/tabla-admin.component';
+import { QuienesSomosUserComponent } from './components/quienes-somos-user/quienes-somos-user.component';
+import { UserCompararCreditoComponent } from './components/user-comparar-credito/user-comparar-credito.component';
+import { EjecutivoCompararCreditoComponent } from './components/ejecutivo-comparar-credito/ejecutivo-comparar-credito.component';
 
 const routes: Routes = [
   {path: "login", component:LoginComponent},
   {path: "login/Administracion", component:AdministracionComponent},
   {path: "user/informaciones", component:InfoUserComponent},
-  {path: "createCredit", component:CreateBankComponent},
+  {path: "admin/createCredit", component:CreateBankComponent},
   {path: "register", component:RegistrarseComponent},
   {path: "password", component:PasswordComponent},
-  {path: "login/home", component:HomeUserComponent },
+  {path: "user/home", component:HomeUserComponent },
   {path: "compararCredito" , component:CompararCreditoComponent},
   {path: "admin/historial", component:HistorialComponent},
   {path: "user/historial", component:UserHistorialComponent},
@@ -37,6 +40,9 @@ const routes: Routes = [
   {path: "user/table", component:TablaUserComponent},
   {path: "ejecutivo/table", component:TablaEjecutivoComponent},
   {path: "admin/table", component:TablaAdminComponent},
+  {path: "user/sobreNosotros", component:QuienesSomosUserComponent},
+  {path: "user/compararCredito", component:UserCompararCreditoComponent},
+  {path: "ejecutivo/compararCredito", component:EjecutivoCompararCreditoComponent},
   {path: "**", component:HomeComponent}
 ];  
 

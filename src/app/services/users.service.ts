@@ -25,9 +25,6 @@ export class UsersService {
   //   return JSON.parse(localStorage.getItem('currentUser'));
   // }
 
-  logged(correo:string,password:string){
-    return this.http.get<User>(`http://localhost:9090/api/users/logged/${correo}/${password}`);
-  }
   // http://localhost:9090/ruta del proyecto backend
 
   registrarEnServidor(nombre: string, apellido: string, rut: string, fecha_de_nacimiento: Date, genero: string, sueldo: number, correo: string, password: string) {

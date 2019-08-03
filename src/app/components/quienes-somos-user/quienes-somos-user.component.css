@@ -14,6 +14,11 @@
 a {
     color: aliceblue;
 }
+.dropdown-menu{
+    border: 1px solid skyblue;
+    top: 85%;
+    right: 0.5rem;
+}
 /* ----------------------------------------------------------------------------- */
 
 
