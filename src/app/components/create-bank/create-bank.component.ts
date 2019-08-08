@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CreditService } from 'src/app/services/credit.service';
 import { Router } from '@angular/router';
 import { Credit } from 'src/app/Modelo/Credit';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-create-bank',
@@ -27,13 +28,23 @@ export class CreateBankComponent implements OnInit {
     this.credit = credit;
     try {
       this.service.create(credit).subscribe(data=>{
+        Swal.fire(
+          'Buen trabajo!',
+          `Se ha Creado correctamente tu banco ${credit.banco}!!`,
+          'success'
+        )
         console.log(data);
+        this.listCredit();
       },err =>{
         console.log(err)
       })
     } catch (e) {
       console.log(e)
     }
+  }
+
+  listCredit(){
+    this.router.navigateByUrl("/admin/table");
   }
 
   // ------- IMG PREVIEW ---------

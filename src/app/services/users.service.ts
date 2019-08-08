@@ -44,6 +44,10 @@ export class UsersService {
   login(user) {
     return this.http.post<User>(`http://localhost:9090/api/users/login`, user)
   }
+
+  loginAdministracion(user){
+    return this.http.post<User>('http://localhost:9090/api/users/login/administracion',user);
+  }
   //`` -> sirve para poder usar las funciones ES6 para poder usar una forma de concatenacion con variables de forma mas sencilla ej:var nombre = "name" y console.log(`mi nombre es${nombre}`), ${variable}
   deleteUser(rut: string) {
     return this.http.delete(`http://localhost:9090/api/users/${rut}`)
