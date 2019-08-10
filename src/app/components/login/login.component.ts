@@ -54,6 +54,7 @@ export class LoginComponent implements OnInit {
             showConfirmButton: false,
             timer: 3000
           })
+          this.navigate();
         },() =>{
           this.navigate();
         })

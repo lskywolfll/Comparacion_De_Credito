@@ -50,7 +50,11 @@ export class TablaAdminComponent implements OnInit {
         )
         this.recarga();
       }
-    })
+    },err =>{console.log(err),
+    () =>{this.recarga();}
+    }
+    
+    )
     
   }
 
